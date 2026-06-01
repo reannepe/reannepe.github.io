@@ -61,11 +61,42 @@ Maps each gallery image across v1/v2/v3 to the most likely source project, based
 | `plans/A-01.pdf–A-05.pdf` | Ready, Set, Learn (A-01–A-05) or Hotel Savano |
 | `plans/A1.pdf–A6.pdf` | Araneta Residence (A1–A6 confirmed) or Costa de Madera / BFAD Lab |
 
+## Hash-Verified Name Mapping (md5sum)
+
+Web images are re-compressed (no hash matches in cloud storage). But within the repo, `images/selected/*` files are exact copies of repo source files:
+
+| selected/ image | = same file as | Size |
+|----------------|---------------|------|
+| `interior-living-01.jpg` | `images/interior/1.jpg` | 316KB |
+| `interior-bedroom-01.jpg` | `images/interior/3.jpg` | 343KB |
+| `interior-dining-01.jpg` | `images/interior/6.jpg` | 337KB |
+| `interior-kitchen-01.jpg` | `images/interior/8.jpg` | 285KB |
+| `interior-lounge-01.jpg` | `images/interior/10.jpg` | 347KB |
+| `interior-living-02.jpg` | `images/interior/17.jpg` | 431KB |
+| `interior-detail-01.jpg` | `images/interior/18.jpg` | 435KB |
+| `interior-bar-01.jpg` | `images/interior/24.jpg` | 494KB |
+| `interior-dining-02.jpg` | `images/interior/28.jpg` | 343KB |
+| `commercial-retail-01.jpg` | `images/commercial/retail-store.jpg` | 241KB |
+| `commercial-cafe-01.jpg` | `images/commercial/carwash-cafe.jpg` | 175KB |
+| `commercial-plan-01.jpg` | `images/commercial/1.jpg` | 508KB |
+| `exterior-house-01.jpg` | `images/exterior/1.jpg` | 156KB |
+| `exterior-house-02.jpg` | `images/exterior/1.1-01.jpg` | 531KB |
+| `exterior-dormitel-01.jpg` | `images/exterior/Dormitel.jpg` | 174KB |
+| `exterior-resort-01.jpg` | `images/exterior/Resort.jpg` | 172KB |
+
+To find originals in cloud storage despite web compression, use perceptual hashing:
+```bash
+# Install ImageMagick, then compare by similarity threshold
+compare -metric RMSE original.jpg compressed.jpg null 2>&1
+# Or batch with phash (perceptual hash)
+# No direct CLI match found via md5sum — images differ by ~20–50% in size from originals
+```
+
 ## Unidentified Images (need visual check with Reanne)
 
-- `commercial-cafe-01.jpg` — need to confirm if Rocket Coffee, Baba's Shawarma, or Maginhawa Cafe
-- `exterior-resort-01.jpg` — Tagaytay vs Costa de Madera
-- v1 exterior `1.1-01.jpg`, `3.1-01.jpg` — unnamed locations
+- `commercial-cafe-01.jpg` (= `carwash-cafe.jpg`) — need to confirm which project
+- `exterior-resort-01.jpg` (= `Resort.jpg`) — Tagaytay vs Costa de Madera
+- v1 exterior `3.1-01.jpg` — unnamed location
 - `commercial/5.jpg, 9.jpg, 10.jpg` — need visual ID
 
 ---

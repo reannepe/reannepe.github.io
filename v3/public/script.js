@@ -1,161 +1,190 @@
 const galleryItems = [
   {
     src: "./images/selected/interior-living-01.jpg",
-    title: "Living Area",
+    title: "Urbina Residence — Living Area",
     badges: ["Render", "Residential", "Interior"],
     main: "render",
     sector: "residential",
     type: "interior",
-    group: "render-residential-interior"
+    project: "Urbina Residence",
+    location: "Makati City",
+    group: "urbina-residence"
   },
   {
     src: "./images/selected/interior-bedroom-01.jpg",
-    title: "Bedroom",
+    title: "Urbina Residence — Bedroom",
     badges: ["Render", "Residential", "Interior"],
     main: "render",
     sector: "residential",
     type: "interior",
-    group: "render-residential-interior"
+    project: "Urbina Residence",
+    location: "Makati City",
+    group: "urbina-residence"
   },
   {
     src: "./images/selected/interior-dining-01.jpg",
-    title: "Dining Area",
+    title: "Urbina Residence — Dining and Living",
     badges: ["Render", "Residential", "Interior"],
     main: "render",
     sector: "residential",
     type: "interior",
-    group: "render-residential-interior"
+    project: "Urbina Residence",
+    location: "Makati City",
+    group: "urbina-residence"
   },
   {
     src: "./images/selected/interior-kitchen-01.jpg",
-    title: "Kitchen",
+    title: "Urbina Residence — Compact Kitchen",
     badges: ["Render", "Residential", "Interior"],
     main: "render",
     sector: "residential",
     type: "interior",
-    group: "render-residential-interior"
+    project: "Urbina Residence",
+    location: "Makati City",
+    group: "urbina-residence"
   },
   {
     src: "./images/selected/commercial-retail-01.jpg",
-    title: "Retail Interior",
+    title: "Ready, Set, Learn — Playschool Interior",
+    badges: ["Render", "Residential", "Interior"],
+    main: "render",
+    sector: "residential",
+    type: "interior",
+    project: "Ready, Set, Learn",
+    location: "Quezon City",
+    group: "ready-set-learn"
+  },
+  {
+    src: "./images/selected/commercial-cafe-01.jpg",
+    title: "Carwash Cafe — Interior Perspective",
     badges: ["Render", "Commercial", "Interior"],
     main: "render",
     sector: "commercial",
     type: "interior",
-    group: "render-commercial-interior"
-  },
-  {
-    src: "./images/selected/commercial-cafe-01.jpg",
-    title: "Cafe Perspective",
-    badges: ["Full-Set", "Commercial", "Coffee Set"],
-    main: "full-set",
-    sector: "commercial",
-    type: "coffee-set",
-    group: "full-set-coffee"
+    project: "Carwash Cafe Concept",
+    location: "",
+    group: "carwash-cafe"
   },
   {
     src: "./images/selected/commercial-plan-01.jpg",
-    title: "Cafe Plan Board",
-    badges: ["Full-Set", "Commercial", "Coffee Set"],
-    main: "full-set",
+    title: "Carwash Cafe — Plan Board",
+    badges: ["Render", "Commercial", "Interior"],
+    main: "render",
     sector: "commercial",
-    type: "coffee-set",
-    group: "full-set-coffee"
+    type: "interior",
+    project: "Carwash Cafe Concept",
+    location: "",
+    group: "carwash-cafe"
   },
   {
     src: "./images/selected/exterior-house-01.jpg",
-    title: "Residential Facade",
+    title: "Residential House — Facade Study",
     badges: ["Render", "Residential", "Exterior"],
     main: "render",
     sector: "residential",
     type: "exterior",
-    group: "render-residential-exterior"
+    project: "Antipolo Residence",
+    location: "Antipolo",
+    group: "house-exterior"
   },
   {
     src: "./images/selected/exterior-house-02.jpg",
-    title: "House Perspective",
+    title: "Residential House — Perspective",
     badges: ["Render", "Residential", "Exterior"],
     main: "render",
     sector: "residential",
     type: "exterior",
-    group: "render-residential-exterior"
+    project: "Antipolo Residence",
+    location: "Antipolo",
+    group: "house-exterior"
   },
   {
     src: "./images/selected/exterior-dormitel-01.jpg",
-    title: "Dormitel Exterior",
+    title: "One Florida Place — Dormitel Exterior",
     badges: ["Render", "Residential", "Exterior"],
     main: "render",
     sector: "residential",
     type: "exterior",
-    group: "render-residential-exterior"
+    project: "One Florida Place Dormitel",
+    location: "Valenzuela City",
+    group: "one-florida-place"
   },
   {
     src: "./images/selected/exterior-resort-01.jpg",
-    title: "Resort View",
+    title: "Tagaytay Resort — Exterior View",
     badges: ["Render", "Commercial", "Exterior"],
     main: "render",
     sector: "commercial",
     type: "exterior",
-    group: "render-commercial-exterior"
+    project: "Tagaytay Event's Place and Resort",
+    location: "Tagaytay",
+    group: "tagaytay-resort"
   },
   {
     src: "./images/plans/a-01.jpg",
-    title: "Architectural Sheet",
+    title: "Ready, Set, Learn — Sheet A-01",
     badges: ["Full-Set", "Residential", "Architecture Set"],
     main: "full-set",
     sector: "residential",
     type: "architecture-set",
-    group: "full-set-architecture"
+    project: "Ready, Set, Learn",
+    location: "Quezon City",
+    group: "ready-set-learn"
   },
   {
     src: "./images/plans/a1.jpg",
-    title: "Building Plan Sheet",
+    title: "One Florida Place — Plan Sheet A1",
     badges: ["Full-Set", "Residential", "Architecture Set"],
     main: "full-set",
     sector: "residential",
     type: "architecture-set",
-    group: "full-set-architecture"
+    project: "One Florida Place Dormitel",
+    location: "Valenzuela City",
+    group: "one-florida-place"
   },
   {
     src: "./images/plans/power-layout.jpg",
-    title: "Power Layout",
-    badges: ["Full-Set", "Commercial", "Interior Set"],
+    title: "Rocket Coffee Booth — Power Layout",
+    badges: ["Full-Set", "Commercial", "Technical Set"],
     main: "full-set",
     sector: "commercial",
-    type: "interior-set",
-    group: "full-set-interior"
+    type: "technical-set",
+    project: "Rocket Coffee Co. Booth",
+    location: "San Juan City",
+    group: "rocket-coffee-booth"
   }
 ];
 
 const projectDetails = {
-  "residential-interior": {
-    label: "01 • Residential Interior Project",
-    title: "Placeholder for a curated residential interior case study",
-    text: "This popup is reserved for the final curated project version with better captions, more process images, and stronger problem-solution context.",
+  "urbina-residence": {
+    label: "01 • Urbina Residence",
+    title: "Reworking a cramped Makati studio into a warmer, more flexible home.",
+    text: "This condominium unit in Makati City started as a tight studio with existing dividers that made the space feel smaller and less usable. The concept removed old partitions and introduced a half-modular, half-glass divider strategy combined with storage-focused furniture planning. Light built-ins with wood and fabric contrast, carpet zoning, mirrors, and glass were used to enlarge the perceived space. The scope covered architectural interior design, project management, and modular contractor coordination over a 5-week design-build schedule.",
     images: [
+      "./images/selected/interior-living-01.jpg",
       "./images/selected/interior-bedroom-01.jpg",
       "./images/selected/interior-dining-01.jpg",
       "./images/selected/interior-kitchen-01.jpg"
     ]
   },
-  "full-set-architecture": {
-    label: "02 • Full-Set Architecture Project",
-    title: "Placeholder for a complete architecture set",
-    text: "This popup will hold a selected project where drawings, plans, and supporting renderings should stay together in one architecture story.",
+  "one-florida-place": {
+    label: "02 • One Florida Place Dormitel",
+    title: "Balancing room capacity, circulation, and presentation across a 6-storey concept.",
+    text: "A multi-storey dormitel in Valenzuela City requiring varied room types, commercial space, parking, and a stronger market presence, all within budget and lot constraints. The project maximized room count and variety while balancing cost, ventilation, commercial income spaces, and penthouse requirements. Scope covered overall project management plus exterior and interior design over a 32-week period.",
     images: [
       "./images/selected/exterior-dormitel-01.jpg",
-      "./images/plans/a-01.jpg",
-      "./images/plans/a1.jpg"
+      "./images/plans/a1.jpg",
+      "./images/selected/interior-dining-01.jpg"
     ]
   },
-  "full-set-interior": {
-    label: "03 • Sample Full-Set Interior Design Project",
-    title: "Placeholder for a coffee house or similar full-set interior package",
-    text: "This popup is intended for a grouped interior design set with renderings, boards, plans, and sections together.",
+  "ready-set-learn": {
+    label: "03 • Ready, Set, Learn",
+    title: "Child-friendly planning and Scandinavian-inspired interiors for a small playschool fit-out.",
+    text: "Designed for a Quezon City playschool and therapy center with a playful, modern Scandinavian interior. The project solved exposed piping and limited floor area using muted pastel colors, light wood textures, fun fixtures, foldable wall panels, hidden built-in storage, decorative ceiling panels, and glass dividers. The 3-week design-only scope included a full drawing set with plans, sections, elevations, schedules, detailing, BOM, and signed-and-sealed blueprints.",
     images: [
-      "./images/selected/commercial-cafe-01.jpg",
-      "./images/selected/commercial-plan-01.jpg",
-      "./images/selected/commercial-retail-01.jpg"
+      "./images/selected/commercial-retail-01.jpg",
+      "./images/plans/a-01.jpg",
+      "./images/selected/interior-living-01.jpg"
     ]
   }
 };
