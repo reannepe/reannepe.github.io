@@ -1,5 +1,7 @@
 # Image Inventory — Gallery → Source Project Mapping
 
+**Images unknown in source: 6 out of 16 gallery images have no confirmed project.** PHASH-matched all 16 against 16,518 images in cloud storage + backup drive — no project-original source files found anywhere. The repo's own `images/` directory is the only surviving copy (see PHASH sweep below).
+
 Maps each gallery image across v1/v2/v3 to the most likely source project, based on:
 - v2 case studies that explicitly name projects
 - career-ops workspace data (`/home/devj/local-arch/code/career-ops/workspaces/reanne/data/`)
@@ -61,9 +63,44 @@ Maps each gallery image across v1/v2/v3 to the most likely source project, based
 | `plans/A-01.pdf–A-05.pdf` | Ready, Set, Learn (A-01–A-05) or Hotel Savano |
 | `plans/A1.pdf–A6.pdf` | Araneta Residence (A1–A6 confirmed) or Costa de Madera / BFAD Lab |
 
+## PHASH Sweep Results (ImageMagick 7.1.2, `compare -metric PHASH`)
+
+Searched all accessible storage for source files of every gallery image:
+- Cloud storage: `/mnt/cloud-storage/Reanne/` (16k files in Needs Organization, 362 in Portfolio, 165 across 7 project folders)
+- Backup drive: `/mnt/gdrive-backup-reannedenisepe/` (408 files in organized project folders)
+- Exhaustive per-image PHASH comparison against every image in each location
+
+**Verdict: Source files beyond this repo do not exist for the gallery images.** The originals were the v1/v2 numbered files (`images/interior/1.jpg`, `images/exterior/Dormitel.jpg`, etc.) which are still in this repo's `images/` directory. Cloud storage only has copies of some interior images saved under different names (likely migrated from the same source set).
+
+### PHASH-Confirmed Copies in Cloud Storage
+
+3 interior images had near-identical matches in cloud storage `Needs Organization/` (random numbered files, not project-organized):
+
+| Gallery Image | Cloud Match (Needs Organization) | PHASH Score | Same as (repo) |
+|--------------|----------------------------------|-------------|----------------|
+| `interior-living-02.jpg` | `2 (1).jpg` | **0.0055** (near-identical) | `images/interior/17.jpg` |
+| `interior-bar-01.jpg` | `9 (1).jpg` | **0.0337** | `images/interior/24.jpg` |
+| `interior-detail-01.jpg` | `333.jpg` | **0.0524** | `images/interior/18.jpg` |
+
+All other 13 gallery images: **no match anywhere** (PHASH > 0.08, meaning different images).
+
+### Searched Storage Summary
+
+| Location | Images Scanned | Matches Found |
+|----------|---------------|---------------|
+| Cloud `Needs Organization/` | 15,583 | 3 interior (named copies) |
+| Cloud `Portfolio/` | 362 | 0 |
+| Cloud project folders (7 dirs) | 165 | 0 |
+| Backup drive organized folders | 408 | 0 |
+| **Total** | **16,518** | **3 (already-known interior)** |
+
+### Likely Explanation
+
+Gallery images were exported from original render source files (SketchUp/V-Ray, Lumion, 3ds Max) directly to the web-optimized sizes seen in `images/selected/`. The original render outputs and working files were stored on a local workstation (now unavailable) or in the v1/v2 git history which was pruned. The `images/` directory preserves the closest thing to originals.
+
 ## Hash-Verified Name Mapping (md5sum)
 
-Web images are re-compressed (no hash matches in cloud storage). But within the repo, `images/selected/*` files are exact copies of repo source files:
+Within the repo, `images/selected/*` files are exact copies of repo source files — verified by md5sum:
 
 | selected/ image | = same file as | Size |
 |----------------|---------------|------|
@@ -84,18 +121,12 @@ Web images are re-compressed (no hash matches in cloud storage). But within the 
 | `exterior-dormitel-01.jpg` | `images/exterior/Dormitel.jpg` | 174KB |
 | `exterior-resort-01.jpg` | `images/exterior/Resort.jpg` | 172KB |
 
-To find originals in cloud storage despite web compression, use perceptual hashing:
-```bash
-# Install ImageMagick, then compare by similarity threshold
-compare -metric RMSE original.jpg compressed.jpg null 2>&1
-# Or batch with phash (perceptual hash)
-# No direct CLI match found via md5sum — images differ by ~20–50% in size from originals
-```
-
 ## Unidentified Images (need visual check with Reanne)
 
-- `commercial-cafe-01.jpg` (= `carwash-cafe.jpg`) — need to confirm which project
-- `exterior-resort-01.jpg` (= `Resort.jpg`) — Tagaytay vs Costa de Madera
+- `commercial-cafe-01.jpg` (= `carwash-cafe.jpg`) — no source found; need project confirmation
+- `exterior-resort-01.jpg` (= `Resort.jpg`) — no source found; Tagaytay vs Costa de Madera
+- `exterior-house-01/02.jpg` (= `exterior/1.jpg, 1.1-01.jpg`) — no source found; Antipolo vs Araneta
+- `commercial-plan-01.jpg` (= `commercial/1.jpg`) — no source found; likely Rocket Coffee
 - v1 exterior `3.1-01.jpg` — unnamed location
 - `commercial/5.jpg, 9.jpg, 10.jpg` — need visual ID
 
@@ -149,20 +180,25 @@ Add:
 v3 lists: SketchUp Pro, V-Ray, AutoCAD, Photoshop, CorelDRAW
 Resume adds: Revit, Lumion (basic), 3ds Max, Canva, Notion, Calendly — consider showing these as secondary/contextual tools.
 
-## 6. Source Images to Pull from Cloud Storage
+## 6. Source Images to Pull from Cloud Storage / Backup Drive
 
-Highest-value images to add from `/mnt/cloud-storage/Reanne/`:
-- **Rocket Coffee Co. Booth** renders and plan sheets — `Reanne Pe- Additional Portfolio/Sample Booth Design and Detailing Project/Rocket Coffee Co. Booth/`
-- **Ready, Set, Learn** mood board and sheets — `Reade Set Learn- TheraPlay Center/`
+Gallery source files beyond the repo don't exist in any accessible storage (see PHASH sweep above). However, the backup drive has **project-organized renders and sheets** that could be added as **new gallery entries** rather than replacements:
+
+Best candidates from backup drive (`/mnt/gdrive-backup-reannedenisepe/`):
+- **Rocket Coffee Co. Booth** — renders + A-01 to A-04 sheets — `Reanne Pe- Additional Portfolio/Sample Booth Design and Detailing Project/Rocket Coffee Co. Booth/`
+- **Ready, Set, Learn** — mood board + sheets — `Reade Set Learn- TheraPlay Center/`
 - **Araneta Residence** A1–A6 sheets — `Sample Residential Project- Construction Document/`
-- **Hotel Savano** hospitality renders — `2018 - Hotel Savano/`
-- **One Florida Place** additional views — from portfolio PDFs or Wix site
-- **Vergel de Dios Residence** interior renderings — `2018 - Vergel de Dios Residence Interior/`
+- **Hotel Savano** hospitality renders — `2018 - Hotel Savano/` (subfolder `1816- HOTEL SAVANO`)
+- **Petsup Booth** detailing sheets — `Reanne Pe- Additional Portfolio/Sample Booth Design and Detailing Project/Petsup Booth/`
+- **Vergel de Dios Residence** interior renderings — `Design Projects/2018 - Vergel de Dios Residence Interior/`
+- **Vince Laundry Conceptual** exterior + plan concepts — `VINCE LAUNDRY- 1ST CONCEPTUAL/`
+- **Sample AI Renders** — `Reanne Pe- Additional Portfolio/Sample AI Renders/`
 
 ## 7. Priority Order
 
 1. Fill the 3 featured project dialogs with real content (highest visibility)
 2. Add 5–10 more gallery images from unused files on disk
 3. Add a "Detail/Modular" filter category with booth/detailing images
-4. Pull new images from cloud storage (Rocket Coffee, Ready Set Learn sheets, Araneta)
+4. Add new gallery entries from backup drive project folders (Rocket Coffee, Ready Set Learn, Petsup Booth, Araneta sheets)
 5. Add Revit, Lumion, 3ds Max to software stack
+6. Confirm the 6 estimated project attributions with Reanne (exterior-house → Antipolo/Araneta?, exterior-resort → Tagaytay/Costa de Madera?, commercial-cafe → Rocket Coffee/Carwash Cafe?)
