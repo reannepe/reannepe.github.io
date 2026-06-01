@@ -342,13 +342,13 @@ const palettes = [
       "--bg": "#f5d0d5",
       "--bg-alt": "#6b7556",
       "--panel": "rgba(255, 247, 241, 0.92)",
-      "--text": "#4e5840",
-      "--text-light": "#756d64",
-      "--text-muted": "#9b9188",
+      "--text": "#38412f",
+      "--text-light": "#5f584f",
+      "--text-muted": "#83786f",
       "--accent": "#c87d87",
       "--accent-light": "#e5bca9",
       "--accent-dark": "#914f58",
-      "--border": "#e1c2b1",
+      "--border": "#d7b29f",
       "--nav-bg": "rgba(245, 208, 213, 0.94)"
     }
   },
