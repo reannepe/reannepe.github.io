@@ -448,16 +448,19 @@ section {
 
 .text-link {
   margin-top: 18px;
-  color: var(--text);
-  padding: 10px 14px;
+  color: var(--accent);
+  background: var(--panel);
+  padding: 10px 18px;
   border-radius: 999px;
   cursor: pointer;
+  font-weight: 500;
   transition: background var(--transition), border-color var(--transition), color var(--transition), transform var(--transition);
 }
 
 .text-link:hover {
-  color: var(--accent-dark);
-  border-color: var(--accent-light);
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
   transform: translateY(-1px);
 }
 
@@ -783,48 +786,67 @@ footer {
 }
 
 .project-dialog {
-  width: min(860px, calc(100% - 24px));
+  width: min(900px, calc(100% - 24px));
   border: none;
   padding: 0;
   background: transparent;
+  margin: auto;
 }
 
 .project-dialog::backdrop {
-  background: rgba(0, 0, 0, 0.62);
-  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(6px);
 }
 
 .project-dialog-content {
   position: relative;
-  background: #fff;
-  border-radius: 18px;
-  padding: 28px;
-  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.16);
+  background: var(--bg);
+  border: 1px solid var(--accent-light);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.32);
+  max-height: 85vh;
+  overflow-y: auto;
 }
 
 .project-dialog-close {
   position: absolute;
   top: 16px;
   right: 16px;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--accent-light);
+  background: var(--panel);
+  color: var(--text-light);
   border-radius: 999px;
-  padding: 8px 14px;
+  padding: 8px 16px;
+  font-size: 0.82rem;
   cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+  z-index: 2;
+}
+
+.project-dialog-close:hover {
+  background: var(--accent);
+  color: var(--bg);
 }
 
 .project-dialog-gallery {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 18px;
+  gap: 12px;
+  margin-top: 20px;
 }
 
 .project-dialog-gallery img {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: var(--radius);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: block;
+}
+
+.project-dialog-gallery img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 920px) {

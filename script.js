@@ -290,11 +290,45 @@ function nextImage() {
   updateLightbox();
 }
 
+function availableOptions(forSelect) {
+  const items = forSelect === "sector"
+    ? galleryItems.filter((i) => (state.main === "all" || i.main === state.main) && (state.type === "all" || i.type === state.type))
+    : galleryItems.filter((i) => (state.main === "all" || i.main === state.main) && (state.sector === "all" || i.sector === state.sector));
+  return [...new Set(items.map((i) => i[forSelect]))].sort();
+}
+
+function updateDropdowns() {
+  const sectorOpts = availableOptions("sector");
+  const typeOpts = availableOptions("type");
+
+  [sectorSelect, typeSelect].forEach((sel) => {
+    const isSector = sel === sectorSelect;
+    const avail = isSector ? sectorOpts : typeOpts;
+    const current = sel.value;
+    const keep = current === "all" || avail.includes(current);
+    if (!keep) sel.value = "all";
+
+    Array.from(sel.options).forEach((opt) => {
+      if (opt.value === "all") return;
+      opt.hidden = !avail.includes(opt.value);
+    });
+  });
+}
+
+function syncStateFromDropdowns() {
+  if (state.sector !== sectorSelect.value) state.sector = sectorSelect.value;
+  if (state.type !== typeSelect.value) state.type = typeSelect.value;
+}
+
 function setFilter(group, value) {
   state[group] = value;
+  if (group !== "sector") sectorSelect.value = state.sector;
+  if (group !== "type") typeSelect.value = state.type;
   document.querySelectorAll(`.filter-btn[data-group="${group}"]`).forEach((button) => {
     button.classList.toggle("active", button.dataset.filter === value);
   });
+  updateDropdowns();
+  syncStateFromDropdowns();
   renderGallery();
 }
 
@@ -329,8 +363,21 @@ document.querySelectorAll("[data-project]").forEach((button) => {
     projectDialogTitle.textContent = details.title;
     projectDialogText.textContent = details.text;
     projectDialogGallery.innerHTML = details.images.map((src, index) => (
-      `<img src="${src}" alt="${details.title} image ${index + 1}" />`
+      `<img src="${src}" alt="${details.title} image ${index + 1}" data-dialog-img="${index}" />`
     )).join("");
+    projectDialogGallery.querySelectorAll("img").forEach((img) => {
+      img.addEventListener("click", () => {
+        const images = details.images;
+        const idx = parseInt(img.dataset.dialogImg, 10);
+        state.lightboxItems = images.map((src) => ({ src, title: details.title, badges: [] }));
+        state.currentIndex = idx;
+        updateLightbox();
+        projectDialog.close();
+        lightbox.classList.add("open");
+        lightbox.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      });
+    });
     projectDialog.showModal();
   });
 });
