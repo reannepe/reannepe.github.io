@@ -131,6 +131,74 @@
     </article>
   </section>
 
+  <section id="filter-concepts">
+    <div class="section-header">
+      <h2>Filter Layout Options</h2>
+      <p class="section-sub">Three alternative ways to organize the portfolio filter UI. These are comparison mockups so you can pick the interaction model before I wire one into the gallery for real.</p>
+    </div>
+
+    <div class="filter-concept-grid">
+      <article class="filter-concept-card">
+        <p class="case-label">Option A</p>
+        <h3>Segmented Tabs + Smart Chips</h3>
+        <p class="filter-concept-copy">One strong top row for the main mode, then compact chips below that update depending on the selected mode.</p>
+        <div class="concept-demo">
+          <div class="filters concept-filters">
+            <button class="filter-btn active" type="button">All</button>
+            <button class="filter-btn" type="button">Render</button>
+            <button class="filter-btn" type="button">Full-Set</button>
+          </div>
+          <div class="filters filters-secondary concept-filters">
+            <button class="filter-btn active" type="button">Residential</button>
+            <button class="filter-btn" type="button">Commercial</button>
+          </div>
+          <div class="concept-chip-row">
+            <span class="gallery-badge">Interior</span>
+            <span class="gallery-badge">Exterior</span>
+            <span class="gallery-badge">Technical / Drawings</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="filter-concept-card">
+        <p class="case-label">Option B</p>
+        <h3>Single Filter Bar + Dropdowns</h3>
+        <p class="filter-concept-copy">A simpler, cleaner top bar: one main view switch plus two dropdown-style controls for sector and type.</p>
+        <div class="concept-toolbar">
+          <div class="concept-pill-group">
+            <span class="concept-pill concept-pill-active">All</span>
+            <span class="concept-pill">Render</span>
+            <span class="concept-pill">Full-Set</span>
+          </div>
+          <div class="concept-selects">
+            <span class="concept-select">Sector: Residential</span>
+            <span class="concept-select">Type: Interior</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="filter-concept-card">
+        <p class="case-label">Option C</p>
+        <h3>Collection Cards</h3>
+        <p class="filter-concept-copy">Less like filtering, more like browsing curated collections. Good if you want people to think in grouped project buckets instead of attributes.</p>
+        <div class="concept-collection-grid">
+          <div class="concept-collection-card">
+            <strong>Renderings</strong>
+            <span>Residential / Commercial</span>
+          </div>
+          <div class="concept-collection-card">
+            <strong>Full-Set Architecture</strong>
+            <span>Residential / Technical</span>
+          </div>
+          <div class="concept-collection-card">
+            <strong>Full-Set Interior</strong>
+            <span>Coffee Set / Boards / Plans</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
   <section id="portfolio">
     <div class="section-header">
       <h2>Portfolio</h2>
