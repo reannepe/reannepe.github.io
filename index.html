@@ -3,144 +3,259 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reanne Pe Portfolio Tests</title>
-  <meta name="description" content="Temporary GitHub Pages landing page for testing Reanne Pe portfolio variants." />
-  <style>
-    :root {
-      --bg: #f3ede3;
-      --panel: rgba(255, 252, 246, 0.82);
-      --text: #231f1a;
-      --soft: #6f665d;
-      --line: rgba(35, 31, 26, 0.12);
-      --accent: #7e6a4b;
-      --serif: "Georgia", serif;
-      --sans: "Arial", sans-serif;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: var(--sans);
-      color: var(--text);
-      background:
-        radial-gradient(circle at top left, rgba(126, 106, 75, 0.14), transparent 24%),
-        linear-gradient(180deg, #f7f3ed 0%, var(--bg) 100%);
-      display: grid;
-      place-items: center;
-      padding: 24px;
-    }
-
-    main {
-      width: min(1040px, 100%);
-      padding: 32px;
-      border: 1px solid rgba(255, 255, 255, 0.56);
-      border-radius: 28px;
-      background: var(--panel);
-      box-shadow: 0 24px 80px rgba(44, 35, 23, 0.08);
-    }
-
-    .eyebrow {
-      margin: 0 0 10px;
-      font-size: 0.76rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--soft);
-    }
-
-    h1 {
-      margin: 0;
-      font-family: var(--serif);
-      font-size: clamp(2.4rem, 6vw, 4.6rem);
-      line-height: 0.95;
-      letter-spacing: -0.03em;
-    }
-
-    .lede {
-      max-width: 58ch;
-      margin: 18px 0 32px;
-      color: var(--soft);
-      line-height: 1.7;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .card {
-      padding: 24px;
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      background: rgba(255, 255, 255, 0.58);
-    }
-
-    .card h2 {
-      margin: 0 0 8px;
-      font-family: var(--serif);
-      font-size: 2rem;
-    }
-
-    .card p {
-      margin: 0 0 18px;
-      color: var(--soft);
-      line-height: 1.7;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 12px 18px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      color: var(--text);
-      text-decoration: none;
-      background: #fff;
-    }
-
-    .button:hover,
-    .button:focus-visible {
-      border-color: var(--accent);
-      color: var(--accent);
-    }
-
-    @media (max-width: 860px) {
-      main { padding: 22px; }
-      .grid { grid-template-columns: 1fr; }
-    }
-  </style>
+  <title>Reanne Denise Pe | Architect</title>
+  <meta name="description" content="Portfolio of Reanne Denise Pe, licensed architect in the Philippines specializing in 3D visualization, drawing support, and architectural interiors." />
+  <meta property="og:title" content="Reanne Denise Pe | Architect" />
+  <meta property="og:description" content="3D visualization, drawing support, and grouped project samples by Reanne Denise Pe." />
+  <meta property="og:image" content="./images/selected/interior-living-01.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23f5ede3'/%3E%3Ctext x='50' y='58' text-anchor='middle' font-family='Georgia,serif' font-size='34' fill='%2328201a'%3ERP%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
-  <main>
-    <p class="eyebrow">Temporary portfolio test hub</p>
-    <h1>Separate previews for Reanne Pe portfolio variants.</h1>
-    <p class="lede">
-      This root page is intentionally neutral. It exists only to make GitHub Pages-style testing easy while keeping each portfolio variant isolated under a separate path.
-    </p>
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">Reanne Pe</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#featured-projects" class="nav-link">Featured Projects</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#software" class="nav-link">Software Stack</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <section class="grid">
-      <article class="card">
-        <p class="eyebrow">Variant 01</p>
-        <h2>v1</h2>
-        <p>The earlier placeholder portfolio from the other model, preserved as-is for comparison.</p>
-        <a class="button" href="./v1/">Open v1</a>
-      </article>
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-background hero-background-interior" aria-hidden="true"></div>
+    <div class="hero-background hero-background-exterior" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-avatar-wrap">
+        <img class="hero-avatar" src="./images/profile/reanne-avatar.jpg" alt="Portrait of Reanne Denise Pe" />
+      </div>
+      <p class="hero-label">Ar. Reanne Denise Pe</p>
+      <h1>Architect</h1>
+      <p class="hero-sub">Calm, presentation-ready architectural visuals for spaces people can actually imagine living in.</p>
+      <div class="hero-skill-strip">
+        <span>3D Visualization</span>
+        <span>Drawing Support</span>
+        <span>Exterior Studies</span>
+      </div>
+    </div>
+  </section>
 
-      <article class="card">
-        <p class="eyebrow">Variant 02</p>
-        <h2>v2</h2>
-        <p>The curated editorial portfolio focused more tightly on architectural visualization and presentation quality.</p>
-        <a class="button" href="./v2/">Open v2</a>
-      </article>
+  <section id="about">
+    <div class="section-header">
+      <h2>Things About Me</h2>
+      <p class="section-sub">A short introduction, in a more personal voice.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I’m a licensed architect based in Metro Manila, Philippines, and most of my work sits between architecture, interiors, visualization, and technical project support.</p>
+        <p>I like projects where I can help make ideas clearer, calmer, and easier to build, whether that means a rendering, a drawing set, a presentation board, or practical design decisions behind the scenes.</p>
+      </div>
+      <div class="about-credentials">
+        <h3>Credentials</h3>
+        <ul>
+          <li>BS Architecture — University of Santo Tomas</li>
+          <li>PRC Licensed Architect</li>
+          <li>UAP Member — Manila Atelier Chapter</li>
+        </ul>
+        <h3>Typical support</h3>
+        <ul>
+          <li>3D visualization for interior and exterior work</li>
+          <li>Floor plans, detailing, and drawing packages</li>
+          <li>Architectural interior design and presentation support</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-      <article class="card">
-        <p class="eyebrow">Variant 03</p>
-        <h2>v3</h2>
-        <p>The new hybrid direction: cleaner structure, grouped browsing, featured-project popups, and revised software claims.</p>
-        <a class="button" href="./v3/">Open v3</a>
+  <section id="core-support">
+    <div class="section-header">
+      <h2>How I Usually Help</h2>
+      <p class="section-sub">These are the main ways I usually support a project.</p>
+    </div>
+    <div class="support-grid">
+      <article class="support-card">
+        <h3>3D Visualization</h3>
+        <p>Interior and exterior renderings, presentation visuals, and modeling-only support when a project needs form, atmosphere, or design direction without a full drawing package.</p>
       </article>
-    </section>
-  </main>
+      <article class="support-card">
+        <h3>Drawing Support</h3>
+        <p>Drafting, floor plans, detailing, presentation sheets, architectural documents, and full-set drawing packages that can support the transition from design into construction.</p>
+      </article>
+      <article class="support-card">
+        <h3>Exterior Studies</h3>
+        <p>Massing studies, facade development, layout problem-solving, and technical design support for projects that need both architectural thinking and visual clarity.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="software">
+    <div class="section-header">
+      <h2>Software Stack</h2>
+    </div>
+    <div class="software-grid">
+      <div class="software-item">
+        <img class="software-logo" src="https://cdn.simpleicons.org/sketchup/cc0000" alt="SketchUp logo" />
+        <span class="software-name">SketchUp Pro</span>
+      </div>
+      <div class="software-item">
+        <img class="software-logo" src="https://cdn.simpleicons.org/chaos/f26d21" alt="Chaos logo used for V-Ray" />
+        <span class="software-name">V-Ray</span>
+      </div>
+      <div class="software-item">
+        <img class="software-logo" src="https://cdn.simpleicons.org/autodesk/0696d7" alt="Autodesk logo used for AutoCAD" />
+        <span class="software-name">AutoCAD</span>
+      </div>
+      <div class="software-item">
+        <img class="software-logo" src="https://cdn.simpleicons.org/adobephotoshop/31A8FF" alt="Adobe Photoshop logo" />
+        <span class="software-name">Photoshop</span>
+      </div>
+      <div class="software-item">
+        <img class="software-logo" src="https://cdn.simpleicons.org/coreldraw/46A247" alt="CorelDRAW logo" />
+        <span class="software-name">CorelDRAW</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured-projects">
+    <div class="section-header">
+      <h2>Featured Projects</h2>
+      <p class="section-sub">A few project stories. These are still placeholders for fuller curated case studies later.</p>
+    </div>
+
+    <article class="case-study">
+      <div class="case-study-media">
+        <img src="./images/selected/interior-bedroom-01.jpg" alt="Placeholder image for a featured residential interior project." />
+      </div>
+      <div class="case-study-copy">
+        <p class="case-label">01 • Residential Interior Project</p>
+        <h3>Placeholder for a fully curated residential interior case study.</h3>
+        <p>This slot is ready for a final project folder with cleaner captions, more process images, and stronger problem-solution context around a real interior architecture project.</p>
+        <ul>
+          <li>Will hold final curated images and captions</li>
+          <li>Built for a fuller narrative around layout, palette, and design decisions</li>
+          <li>Current content is placeholder only</li>
+        </ul>
+        <button class="text-link" type="button" data-project="residential-interior">Click here to learn more</button>
+      </div>
+    </article>
+
+    <article class="case-study case-study-reverse">
+      <div class="case-study-media case-study-stack">
+        <img src="./images/selected/exterior-dormitel-01.jpg" alt="Placeholder exterior image for a featured full-set architecture project." />
+        <img src="./images/plans/a1.jpg" alt="Placeholder drawing preview for a featured full-set architecture project." />
+      </div>
+      <div class="case-study-copy">
+        <p class="case-label">02 • Full-Set Architecture Project</p>
+        <h3>Placeholder for a complete architecture set with drawings and supporting visuals.</h3>
+        <p>This slot is intended for a fuller architectural project where renderings, plan sheets, and technical drawings should stay together instead of being scattered across the gallery.</p>
+        <ul>
+          <li>Good fit for a residential house, playschool, or similar full architecture set</li>
+          <li>Supports drawing previews plus project explanation in one place</li>
+          <li>Current content is placeholder only</li>
+        </ul>
+        <button class="text-link" type="button" data-project="full-set-architecture">Click here to learn more</button>
+      </div>
+    </article>
+
+    <article class="case-study">
+      <div class="case-study-media case-study-stack">
+        <img src="./images/selected/commercial-cafe-01.jpg" alt="Placeholder image for a sample full-set interior design project." />
+        <img src="./images/selected/commercial-plan-01.jpg" alt="Placeholder plan image for a sample full-set interior design project." />
+      </div>
+      <div class="case-study-copy">
+        <p class="case-label">03 • Sample Full-Set Interior Design Project</p>
+        <h3>Placeholder for a coffee house or other project with renderings, plans, and boards kept together.</h3>
+        <p>This slot is designed for one full-set interior design package so the mood boards, floor plans, renderings, and supporting presentation materials can live in one grouped story.</p>
+        <ul>
+          <li>Ideal for the coffee house project or another full-set interior package</li>
+          <li>Separates a project-level story from the general gallery</li>
+          <li>Current content is placeholder only</li>
+        </ul>
+        <button class="text-link" type="button" data-project="full-set-interior">Click here to learn more</button>
+      </div>
+    </article>
+  </section>
+
+  <section id="portfolio">
+    <div class="section-header">
+      <h2>Portfolio</h2>
+      <p class="section-sub">Browse the work by mode, sector, and type.</p>
+    </div>
+
+    <div class="portfolio-toolbar">
+      <div class="concept-pill-group" id="mainFilters">
+        <button class="concept-pill concept-pill-active" type="button" data-group="main" data-filter="all">All</button>
+        <button class="concept-pill" type="button" data-group="main" data-filter="render">Render</button>
+        <button class="concept-pill" type="button" data-group="main" data-filter="full-set">Full-Set</button>
+      </div>
+      <div class="concept-selects">
+        <label class="sr-only" for="sectorSelect">Sector</label>
+        <select class="portfolio-select" id="sectorSelect">
+          <option value="all">All sectors</option>
+          <option value="residential">Residential</option>
+          <option value="commercial">Commercial</option>
+        </select>
+        <label class="sr-only" for="typeSelect">Type</label>
+        <select class="portfolio-select" id="typeSelect">
+          <option value="all">All types</option>
+          <option value="interior">Interior</option>
+          <option value="exterior">Exterior</option>
+          <option value="technical">Technical / Drawings</option>
+          <option value="coffee-set">Coffee Set</option>
+          <option value="architecture-set">Architecture Set</option>
+          <option value="interior-set">Interior Set</option>
+        </select>
+      </div>
+    </div>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <section id="contact">
+    <div class="section-header">
+      <h2>Let’s Connect</h2>
+    </div>
+    <div class="contact-content">
+      <div class="contact-item"><span>Email</span><a href="mailto:reannedenisepe@gmail.com">reannedenisepe@gmail.com</a></div>
+      <div class="contact-item"><span>LinkedIn</span><a href="https://ph.linkedin.com/in/reanne-denise-pe-29bb5a261" target="_blank" rel="noreferrer">View profile</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <p>&copy; 2026 Reanne Pe Design Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">&lsaquo;</button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="" />
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">&rsaquo;</button>
+  </div>
+
+  <dialog class="project-dialog" id="projectDialog">
+    <button class="project-dialog-close" id="projectDialogClose" aria-label="Close">Close</button>
+    <div class="project-dialog-content">
+      <p class="case-label" id="projectDialogLabel"></p>
+      <h3 id="projectDialogTitle"></h3>
+      <p id="projectDialogText"></p>
+      <div class="project-dialog-gallery" id="projectDialogGallery"></div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
 </body>
 </html>

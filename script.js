@@ -178,16 +178,13 @@ const navLinks = document.getElementById("navLinks");
 const sectorSelect = document.getElementById("sectorSelect");
 const typeSelect = document.getElementById("typeSelect");
 
-
-
 const state = {
   main: "all",
   sector: "all",
   type: "all",
   visibleItems: [],
   lightboxItems: [],
-  currentIndex: 0,
-
+  currentIndex: 0
 };
 
 function matchesFilter(item) {
