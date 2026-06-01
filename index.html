@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reanne Pe Portfolio Tests</title>
+  <meta name="description" content="Temporary GitHub Pages landing page for testing Reanne Pe portfolio variants." />
+  <style>
+    :root {
+      --bg: #f3ede3;
+      --panel: rgba(255, 252, 246, 0.82);
+      --text: #231f1a;
+      --soft: #6f665d;
+      --line: rgba(35, 31, 26, 0.12);
+      --accent: #7e6a4b;
+      --serif: "Georgia", serif;
+      --sans: "Arial", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: var(--sans);
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(126, 106, 75, 0.14), transparent 24%),
+        linear-gradient(180deg, #f7f3ed 0%, var(--bg) 100%);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    main {
+      width: min(920px, 100%);
+      padding: 32px;
+      border: 1px solid rgba(255, 255, 255, 0.56);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: 0 24px 80px rgba(44, 35, 23, 0.08);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      font-size: 0.76rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--soft);
+    }
+
+    h1 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(2.4rem, 6vw, 4.6rem);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+    }
+
+    .lede {
+      max-width: 58ch;
+      margin: 18px 0 32px;
+      color: var(--soft);
+      line-height: 1.7;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.58);
+    }
+
+    .card h2 {
+      margin: 0 0 8px;
+      font-family: var(--serif);
+      font-size: 2rem;
+    }
+
+    .card p {
+      margin: 0 0 18px;
+      color: var(--soft);
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      color: var(--text);
+      text-decoration: none;
+      background: #fff;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    @media (max-width: 720px) {
+      main {
+        padding: 22px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Temporary portfolio test hub</p>
+    <h1>Separate previews for Reanne Pe portfolio v1 and v2.</h1>
+    <p class="lede">
+      This root page is intentionally neutral. It exists only to make GitHub Pages-style testing easy while keeping both portfolio variants isolated under separate paths.
+    </p>
+
+    <section class="grid">
+      <article class="card">
+        <p class="eyebrow">Variant 01</p>
+        <h2>v1</h2>
+        <p>The earlier placeholder portfolio from the other model, preserved as-is for comparison.</p>
+        <a class="button" href="./v1/">Open v1</a>
+      </article>
+
+      <article class="card">
+        <p class="eyebrow">Variant 02</p>
+        <h2>v2</h2>
+        <p>The curated editorial portfolio focused more tightly on architectural visualization and presentation quality.</p>
+        <a class="button" href="./v2/">Open v2</a>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
