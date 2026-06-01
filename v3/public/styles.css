@@ -207,11 +207,12 @@ section {
 }
 
 .hero-label {
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: var(--accent);
+  color: var(--text);
   margin-bottom: 14px;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.6);
 }
 
 .hero-content h1 {
@@ -227,9 +228,10 @@ section {
 
 .hero-sub {
   font-size: 1.1rem;
-  color: var(--text-light);
+  color: var(--text);
   max-width: 34ch;
   margin: 0 auto 28px;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.4);
 }
 
 .hero-skill-strip {
