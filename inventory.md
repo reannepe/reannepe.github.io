@@ -98,6 +98,24 @@ All other 13 gallery images: **no match anywhere** (PHASH > 0.08, meaning differ
 
 Gallery images were exported from original render source files (SketchUp/V-Ray, Lumion, 3ds Max) directly to the web-optimized sizes seen in `images/selected/`. The original render outputs and working files were stored on a local workstation (now unavailable) or in the v1/v2 git history which was pruned. The `images/` directory preserves the closest thing to originals.
 
+## New Content Added (from ~/Downloads/past-projects/)
+
+| Source | Destination | Type | Notes |
+|--------|-------------|------|-------|
+| `Outdoor Renders/Vertis Garden.png` | `images/selected/vertis-garden.jpg` | New gallery entry | Landscape/hardscape outdoor render |
+| `Full Set/Urban Jam Laundry Shop/A1.pdf` | `images/selected/urban-jam-laundry-01.jpg` | New gallery entry | A1 plan preview (converted from PDF) |
+| `Full Set/Urban Jam Laundry Shop/A1-A4.pdf` | `images/plans/urban-jam-laundry/` | Plan source PDFs | Full drawing set for new project |
+| `Full Set/Residential House/A1-A6.pdf` | `images/plans/residential-house/` | Plan source PDFs | Araneta Residence source docs (+ POWER LAYOUT.pdf) |
+| `Commercial- renders/Carwash and Cafe.png` | `images/commercial/carwash-cafe.png` | Higher-res PNG | Different render (PHASH 0.30 vs existing JPG) |
+| `Commercial- renders/Retail Store.png` | `images/commercial/retail-store.png` | Higher-res PNG | Different render (PHASH 0.30 vs existing JPG) |
+| `Exterior Residential Renders/1-3.png` | `images/exterior/` (overwrite) | Higher-res PNG | Replaces `1.jpg, 2.jpg, 3.jpg` in source dir |
+| `Exterior Residential Renders/Dormitel.png` | `images/exterior/` | Higher-res PNG | Replaces `Dormitel.jpg` in source dir |
+| `Exterior Residential Renders/Resort.png` | `images/exterior/` | Higher-res PNG | Replaces `Resort.jpg` in source dir |
+
+## Gallery Count
+
+**18 items** (up from 16): Urbina Residence (4), Ready Set Learn (2), Carwash Cafe (2), Antipolo Residence (2), One Florida Place (2), Tagaytay Resort (1), Rocket Coffee Booth (1), **Vertis Garden (1)**, **Urban Jam Laundry (1)**
+
 ## Hash-Verified Name Mapping (md5sum)
 
 Within the repo, `images/selected/*` files are exact copies of repo source files — verified by md5sum:

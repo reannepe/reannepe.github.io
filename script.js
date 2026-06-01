@@ -152,6 +152,28 @@ const galleryItems = [
     project: "Rocket Coffee Co. Booth",
     location: "San Juan City",
     group: "rocket-coffee-booth"
+  },
+  {
+    src: "./images/selected/vertis-garden.jpg",
+    title: "Vertis Garden — Outdoor Landscape Perspective",
+    badges: ["Render", "Commercial", "Exterior"],
+    main: "render",
+    sector: "commercial",
+    type: "exterior",
+    project: "Vertis Garden",
+    location: "",
+    group: "vertis-garden"
+  },
+  {
+    src: "./images/selected/urban-jam-laundry-01.jpg",
+    title: "Urban Jam Laundry Shop — Sheet A1",
+    badges: ["Full-Set", "Commercial", "Drawing / Plan"],
+    main: "full-set",
+    sector: "commercial",
+    type: "drawing",
+    project: "Urban Jam Laundry Shop",
+    location: "",
+    group: "urban-jam-laundry"
   }
 ];
 
