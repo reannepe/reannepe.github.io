@@ -319,6 +319,74 @@ const palettes = [
     }
   },
   {
+    name: "Red Wine Light",
+    colors: ["#fcf4f6", "#e8c7cf", "#b76e79", "#8c2f39", "#4d1f2d"],
+    vars: {
+      "--bg": "#fcf4f6",
+      "--bg-alt": "#f9f0f2",
+      "--panel": "rgba(255, 252, 253, 0.92)",
+      "--text": "#2c161d",
+      "--text-light": "#6e3b4a",
+      "--text-muted": "#a66c7a",
+      "--accent": "#8c2f39",
+      "--accent-light": "#b76e79",
+      "--accent-dark": "#4d1f2d",
+      "--border": "#e0c5cc",
+      "--nav-bg": "rgba(252, 244, 246, 0.94)"
+    }
+  },
+  {
+    name: "Red Wine Light v1",
+    colors: ["#e8c7cf", "#b76e79", "#8c2f39", "#4d1f2d", "#fcf4f6"],
+    vars: {
+      "--bg": "#fcf4f6",
+      "--bg-alt": "#f9f0f2",
+      "--panel": "rgba(255, 252, 253, 0.92)",
+      "--text": "#2c161d",
+      "--text-light": "#6e3b4a",
+      "--text-muted": "#a66c7a",
+      "--accent": "#8c2f39",
+      "--accent-light": "#b76e79",
+      "--accent-dark": "#4d1f2d",
+      "--border": "#e0c5cc",
+      "--nav-bg": "rgba(252, 244, 246, 0.94)"
+    }
+  },
+  {
+    name: "Red Wine Light v2",
+    colors: ["#b76e79", "#8c2f39", "#4d1f2d", "#fcf4f6", "#e8c7cf"],
+    vars: {
+      "--bg": "#fcf4f6",
+      "--bg-alt": "#f9f0f2",
+      "--panel": "rgba(255, 252, 253, 0.92)",
+      "--text": "#2c161d",
+      "--text-light": "#6e3b4a",
+      "--text-muted": "#a66c7a",
+      "--accent": "#8c2f39",
+      "--accent-light": "#b76e79",
+      "--accent-dark": "#4d1f2d",
+      "--border": "#e0c5cc",
+      "--nav-bg": "rgba(252, 244, 246, 0.94)"
+    }
+  },
+  {
+    name: "Red Wine Light v3",
+    colors: ["#4d1f2d", "#8c2f39", "#b76e79", "#e8c7cf", "#fcf4f6"],
+    vars: {
+      "--bg": "#fcf4f6",
+      "--bg-alt": "#f9f0f2",
+      "--panel": "rgba(255, 252, 253, 0.92)",
+      "--text": "#2c161d",
+      "--text-light": "#6e3b4a",
+      "--text-muted": "#a66c7a",
+      "--accent": "#8c2f39",
+      "--accent-light": "#b76e79",
+      "--accent-dark": "#4d1f2d",
+      "--border": "#e0c5cc",
+      "--nav-bg": "rgba(252, 244, 246, 0.94)"
+    }
+  },
+  {
     name: "Sunshine",
     colors: ["#f6bc3f", "#ffd56b", "#fff0b3", "#8a6d1f", "#fff8dd"],
     vars: {
@@ -338,6 +406,57 @@ const palettes = [
   {
     name: "Pinterest Product Stylish",
     colors: ["#F0C4CB", "#C87D87", "#FBEAD6", "#6B7556", "#E5BCA9"],
+    vars: {
+      "--bg": "#f5d0d5",
+      "--bg-alt": "#6b7556",
+      "--panel": "rgba(255, 247, 241, 0.92)",
+      "--text": "#38412f",
+      "--text-light": "#5f584f",
+      "--text-muted": "#83786f",
+      "--accent": "#c87d87",
+      "--accent-light": "#e5bca9",
+      "--accent-dark": "#914f58",
+      "--border": "#d7b29f",
+      "--nav-bg": "rgba(245, 208, 213, 0.94)"
+    }
+  },
+  {
+    name: "Pinterest Product Stylish v1",
+    colors: ["#C87D87", "#FBEAD6", "#6B7556", "#E5BCA9", "#F0C4CB"],
+    vars: {
+      "--bg": "#f5d0d5",
+      "--bg-alt": "#6b7556",
+      "--panel": "rgba(255, 247, 241, 0.92)",
+      "--text": "#38412f",
+      "--text-light": "#5f584f",
+      "--text-muted": "#83786f",
+      "--accent": "#c87d87",
+      "--accent-light": "#e5bca9",
+      "--accent-dark": "#914f58",
+      "--border": "#d7b29f",
+      "--nav-bg": "rgba(245, 208, 213, 0.94)"
+    }
+  },
+  {
+    name: "Pinterest Product Stylish v2",
+    colors: ["#FBEAD6", "#6B7556", "#E5BCA9", "#F0C4CB", "#C87D87"],
+    vars: {
+      "--bg": "#f5d0d5",
+      "--bg-alt": "#6b7556",
+      "--panel": "rgba(255, 247, 241, 0.92)",
+      "--text": "#38412f",
+      "--text-light": "#5f584f",
+      "--text-muted": "#83786f",
+      "--accent": "#c87d87",
+      "--accent-light": "#e5bca9",
+      "--accent-dark": "#914f58",
+      "--border": "#d7b29f",
+      "--nav-bg": "rgba(245, 208, 213, 0.94)"
+    }
+  },
+  {
+    name: "Pinterest Product Stylish v3",
+    colors: ["#E5BCA9", "#6B7556", "#FBEAD6", "#C87D87", "#F0C4CB"],
     vars: {
       "--bg": "#f5d0d5",
       "--bg-alt": "#6b7556",
