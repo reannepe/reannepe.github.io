@@ -46,9 +46,9 @@ const galleryItems = [
   {
     src: "./images/selected/commercial-retail-01.jpg",
     title: "Ready, Set, Learn — Playschool Interior",
-    badges: ["Render", "Residential", "Interior"],
+    badges: ["Render", "Commercial", "Interior"],
     main: "render",
-    sector: "residential",
+    sector: "commercial",
     type: "interior",
     project: "Ready, Set, Learn",
     location: "Quezon City",
@@ -123,10 +123,10 @@ const galleryItems = [
   {
     src: "./images/plans/a-01.jpg",
     title: "Ready, Set, Learn — Sheet A-01",
-    badges: ["Full-Set", "Residential", "Architecture Set"],
+    badges: ["Full-Set", "Commercial", "Drawing / Plan"],
     main: "full-set",
-    sector: "residential",
-    type: "architecture-set",
+    sector: "commercial",
+    type: "drawing",
     project: "Ready, Set, Learn",
     location: "Quezon City",
     group: "ready-set-learn"
@@ -134,10 +134,10 @@ const galleryItems = [
   {
     src: "./images/plans/a1.jpg",
     title: "One Florida Place — Plan Sheet A1",
-    badges: ["Full-Set", "Residential", "Architecture Set"],
+    badges: ["Full-Set", "Residential", "Drawing / Plan"],
     main: "full-set",
     sector: "residential",
-    type: "architecture-set",
+    type: "drawing",
     project: "One Florida Place Dormitel",
     location: "Valenzuela City",
     group: "one-florida-place"
@@ -145,10 +145,10 @@ const galleryItems = [
   {
     src: "./images/plans/power-layout.jpg",
     title: "Rocket Coffee Booth — Power Layout",
-    badges: ["Full-Set", "Commercial", "Technical Set"],
+    badges: ["Full-Set", "Commercial", "Drawing / Plan"],
     main: "full-set",
     sector: "commercial",
-    type: "technical-set",
+    type: "drawing",
     project: "Rocket Coffee Co. Booth",
     location: "San Juan City",
     group: "rocket-coffee-booth"
