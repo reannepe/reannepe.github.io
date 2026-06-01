@@ -168,7 +168,7 @@ section {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, color-mix(in srgb, var(--bg-alt) 55%, transparent), var(--bg-alt));
+  background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--bg-alt) 30%, transparent));
   z-index: 2;
 }
 
@@ -178,7 +178,7 @@ section {
   width: 100%;
   background-size: cover;
   background-position: center;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   filter: saturate(0.9);
   z-index: 0;
   background-image: url("./images/hero-bg.jpg");
@@ -219,7 +219,8 @@ section {
   font-size: clamp(2.8rem, 6vw, 4.8rem);
   font-weight: 700;
   line-height: 1.05;
-  color: var(--accent-dark);
+  color: var(--text);
+  text-shadow: 0 2px 12px rgba(0,0,0,0.5);
   margin-bottom: 16px;
   letter-spacing: -0.03em;
 }
