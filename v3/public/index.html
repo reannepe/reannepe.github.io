@@ -23,9 +23,9 @@
       </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#featured-projects" class="nav-link">Featured Projects</a></li>
-        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#software" class="nav-link">Software</a></li>
+        <li><a href="#software" class="nav-link">Software Stack</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </div>
@@ -52,12 +52,13 @@
 
   <section id="about">
     <div class="section-header">
-      <h2>About</h2>
+      <h2>Things About Me</h2>
+      <p class="section-sub">A short introduction, in a more personal voice.</p>
     </div>
     <div class="about-grid">
       <div class="about-text">
-        <p>Licensed architect based in Metro Manila, Philippines, with experience across residential and commercial design, architectural interiors, 3D visualization, and project coordination.</p>
-        <p>Her work is strongest when a project needs both design sensitivity and technical follow-through: believable renderings, clearer presentation sheets, practical drafting support, and buildable design decisions.</p>
+        <p>I’m a licensed architect based in Metro Manila, Philippines, and most of my work sits between architecture, interiors, visualization, and technical project support.</p>
+        <p>I like projects where I can help make ideas clearer, calmer, and easier to build, whether that means a rendering, a drawing set, a presentation board, or practical design decisions behind the scenes.</p>
       </div>
       <div class="about-credentials">
         <h3>Credentials</h3>
@@ -78,8 +79,8 @@
 
   <section id="core-support">
     <div class="section-header">
-      <h2>Core Support</h2>
-      <p class="section-sub">Architectural support across visuals, drawings, and practical technical delivery.</p>
+      <h2>How I Usually Help</h2>
+      <p class="section-sub">These are the main ways I usually support a project.</p>
     </div>
     <div class="support-grid">
       <article class="support-card">
@@ -99,7 +100,7 @@
 
   <section id="software">
     <div class="section-header">
-      <h2>Software</h2>
+      <h2>Software Stack</h2>
     </div>
     <div class="software-grid">
       <div class="software-item">
@@ -128,7 +129,7 @@
   <section id="featured-projects">
     <div class="section-header">
       <h2>Featured Projects</h2>
-      <p class="section-sub">The stronger case-study layout stays here. Reanne can replace these placeholders with three final curated projects later.</p>
+      <p class="section-sub">A few project stories. These are still placeholders for fuller curated case studies later.</p>
     </div>
 
     <article class="case-study">
@@ -188,79 +189,40 @@
   <section id="portfolio">
     <div class="section-header">
       <h2>Portfolio</h2>
-      <p class="section-sub">Three alternate portfolio navigation patterns, shown side by side in the actual portfolio section so you can compare the interaction models directly.</p>
+      <p class="section-sub">Browse the work by mode, sector, and type.</p>
     </div>
 
-    <div class="filter-concept-grid">
-      <article class="filter-concept-card">
-        <p class="case-label">Option A</p>
-        <h3>Segmented Tabs + Smart Chips</h3>
-        <p class="filter-concept-copy">One strong top row for the main mode, then compact chips below that update depending on the selected mode.</p>
-        <div class="concept-demo">
-          <div class="filters concept-filters">
-            <button class="filter-btn active" type="button">All</button>
-            <button class="filter-btn" type="button">Render</button>
-            <button class="filter-btn" type="button">Full-Set</button>
-          </div>
-          <div class="filters filters-secondary concept-filters">
-            <button class="filter-btn active" type="button">Residential</button>
-            <button class="filter-btn" type="button">Commercial</button>
-          </div>
-          <div class="concept-chip-row">
-            <span class="gallery-badge">Interior</span>
-            <span class="gallery-badge">Exterior</span>
-            <span class="gallery-badge">Technical / Drawings</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="filter-concept-card">
-        <p class="case-label">Option B</p>
-        <h3>Single Filter Bar + Dropdowns</h3>
-        <p class="filter-concept-copy">A simpler, cleaner top bar: one main view switch plus two dropdown-style controls for sector and type.</p>
-        <div class="concept-toolbar">
-          <div class="concept-pill-group">
-            <span class="concept-pill concept-pill-active">All</span>
-            <span class="concept-pill">Render</span>
-            <span class="concept-pill">Full-Set</span>
-          </div>
-          <div class="concept-selects">
-            <span class="concept-select">Sector: Residential</span>
-            <span class="concept-select">Type: Interior</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="filter-concept-card">
-        <p class="case-label">Option C</p>
-        <h3>Collection Cards</h3>
-        <p class="filter-concept-copy">Less like filtering, more like browsing curated collections. Good if you want people to think in grouped project buckets instead of attributes.</p>
-        <div class="concept-collection-grid">
-          <div class="concept-collection-card">
-            <strong>Renderings</strong>
-            <span>Residential / Commercial</span>
-          </div>
-          <div class="concept-collection-card">
-            <strong>Full-Set Architecture</strong>
-            <span>Residential / Technical</span>
-          </div>
-          <div class="concept-collection-card">
-            <strong>Full-Set Interior</strong>
-            <span>Coffee Set / Boards / Plans</span>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <div class="portfolio-note">
-      <p>Current gallery stays below as a reference set while you pick the navigation pattern.</p>
+    <div class="portfolio-toolbar">
+      <div class="concept-pill-group" id="mainFilters">
+        <button class="concept-pill concept-pill-active" type="button" data-group="main" data-filter="all">All</button>
+        <button class="concept-pill" type="button" data-group="main" data-filter="render">Render</button>
+        <button class="concept-pill" type="button" data-group="main" data-filter="full-set">Full-Set</button>
+      </div>
+      <div class="concept-selects">
+        <label class="sr-only" for="sectorSelect">Sector</label>
+        <select class="portfolio-select" id="sectorSelect">
+          <option value="all">All sectors</option>
+          <option value="residential">Residential</option>
+          <option value="commercial">Commercial</option>
+        </select>
+        <label class="sr-only" for="typeSelect">Type</label>
+        <select class="portfolio-select" id="typeSelect">
+          <option value="all">All types</option>
+          <option value="interior">Interior</option>
+          <option value="exterior">Exterior</option>
+          <option value="technical">Technical / Drawings</option>
+          <option value="coffee-set">Coffee Set</option>
+          <option value="architecture-set">Architecture Set</option>
+          <option value="interior-set">Interior Set</option>
+        </select>
+      </div>
     </div>
     <div class="gallery" id="gallery"></div>
   </section>
 
   <section id="contact">
     <div class="section-header">
-      <h2>Contact</h2>
+      <h2>Let’s Connect</h2>
     </div>
     <div class="contact-content">
       <div class="contact-item"><span>Email</span><a href="mailto:reannedenisepe@gmail.com">reannedenisepe@gmail.com</a></div>
