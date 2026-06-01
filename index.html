@@ -17,9 +17,7 @@
       --sans: "Arial", sans-serif;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -35,7 +33,7 @@
     }
 
     main {
-      width: min(920px, 100%);
+      width: min(1040px, 100%);
       padding: 32px;
       border: 1px solid rgba(255, 255, 255, 0.56);
       border-radius: 28px;
@@ -68,7 +66,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 18px;
     }
 
@@ -107,23 +105,18 @@
       color: var(--accent);
     }
 
-    @media (max-width: 720px) {
-      main {
-        padding: 22px;
-      }
-
-      .grid {
-        grid-template-columns: 1fr;
-      }
+    @media (max-width: 860px) {
+      main { padding: 22px; }
+      .grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
   <main>
     <p class="eyebrow">Temporary portfolio test hub</p>
-    <h1>Separate previews for Reanne Pe portfolio v1 and v2.</h1>
+    <h1>Separate previews for Reanne Pe portfolio variants.</h1>
     <p class="lede">
-      This root page is intentionally neutral. It exists only to make GitHub Pages-style testing easy while keeping both portfolio variants isolated under separate paths.
+      This root page is intentionally neutral. It exists only to make GitHub Pages-style testing easy while keeping each portfolio variant isolated under a separate path.
     </p>
 
     <section class="grid">
@@ -139,6 +132,13 @@
         <h2>v2</h2>
         <p>The curated editorial portfolio focused more tightly on architectural visualization and presentation quality.</p>
         <a class="button" href="./v2/">Open v2</a>
+      </article>
+
+      <article class="card">
+        <p class="eyebrow">Variant 03</p>
+        <h2>v3</h2>
+        <p>The new hybrid direction: cleaner structure, grouped browsing, featured-project popups, and revised software claims.</p>
+        <a class="button" href="./v3/">Open v3</a>
       </article>
     </section>
   </main>
