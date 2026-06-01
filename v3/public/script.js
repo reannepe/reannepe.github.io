@@ -319,6 +319,74 @@ const palettes = [
     }
   },
   {
+    name: "Red Wine v1",
+    colors: ["#8c2f39", "#b76e79", "#e8c7cf", "#f9f0f2", "#4d1f2d"],
+    vars: {
+      "--bg": "#2e0f1b",
+      "--bg-alt": "#8c2f39",
+      "--panel": "rgba(73, 30, 43, 0.92)",
+      "--text": "#f8edf0",
+      "--text-light": "#d7b8bf",
+      "--text-muted": "#ab808c",
+      "--accent": "#b76e79",
+      "--accent-light": "#e8c7cf",
+      "--accent-dark": "#d24a59",
+      "--border": "#6e3748",
+      "--nav-bg": "rgba(46, 15, 27, 0.94)"
+    }
+  },
+  {
+    name: "Red Wine v2",
+    colors: ["#b76e79", "#e8c7cf", "#f9f0f2", "#4d1f2d", "#8c2f39"],
+    vars: {
+      "--bg": "#2e0f1b",
+      "--bg-alt": "#b76e79",
+      "--panel": "rgba(73, 30, 43, 0.92)",
+      "--text": "#f8edf0",
+      "--text-light": "#d7b8bf",
+      "--text-muted": "#ab808c",
+      "--accent": "#e8c7cf",
+      "--accent-light": "#f9f0f2",
+      "--accent-dark": "#d24a59",
+      "--border": "#6e3748",
+      "--nav-bg": "rgba(46, 15, 27, 0.94)"
+    }
+  },
+  {
+    name: "Red Wine v3",
+    colors: ["#e8c7cf", "#f9f0f2", "#4d1f2d", "#8c2f39", "#b76e79"],
+    vars: {
+      "--bg": "#2e0f1b",
+      "--bg-alt": "#e8c7cf",
+      "--panel": "rgba(73, 30, 43, 0.92)",
+      "--text": "#f8edf0",
+      "--text-light": "#d7b8bf",
+      "--text-muted": "#ab808c",
+      "--accent": "#f9f0f2",
+      "--accent-light": "#4d1f2d",
+      "--accent-dark": "#d24a59",
+      "--border": "#6e3748",
+      "--nav-bg": "rgba(46, 15, 27, 0.94)"
+    }
+  },
+  {
+    name: "Red Wine v4",
+    colors: ["#f9f0f2", "#4d1f2d", "#8c2f39", "#b76e79", "#e8c7cf"],
+    vars: {
+      "--bg": "#2e0f1b",
+      "--bg-alt": "#f9f0f2",
+      "--panel": "rgba(73, 30, 43, 0.92)",
+      "--text": "#f8edf0",
+      "--text-light": "#d7b8bf",
+      "--text-muted": "#ab808c",
+      "--accent": "#4d1f2d",
+      "--accent-light": "#8c2f39",
+      "--accent-dark": "#d24a59",
+      "--border": "#6e3748",
+      "--nav-bg": "rgba(46, 15, 27, 0.94)"
+    }
+  },
+  {
     name: "Red Wine Light",
     colors: ["#fcf4f6", "#e8c7cf", "#b76e79", "#8c2f39", "#4d1f2d"],
     vars: {
@@ -345,8 +413,8 @@ const palettes = [
       "--text": "#2c161d",
       "--text-light": "#6e3b4a",
       "--text-muted": "#a66c7a",
-      "--accent": "#8c2f39",
-      "--accent-light": "#b76e79",
+      "--accent": "#b76e79",
+      "--accent-light": "#8c2f39",
       "--accent-dark": "#4d1f2d",
       "--border": "#e0c5cc",
       "--nav-bg": "rgba(252, 244, 246, 0.94)"
@@ -363,15 +431,15 @@ const palettes = [
       "--text-light": "#6e3b4a",
       "--text-muted": "#a66c7a",
       "--accent": "#8c2f39",
-      "--accent-light": "#b76e79",
-      "--accent-dark": "#4d1f2d",
+      "--accent-light": "#4d1f2d",
+      "--accent-dark": "#e8c7cf",
       "--border": "#e0c5cc",
       "--nav-bg": "rgba(252, 244, 246, 0.94)"
     }
   },
   {
     name: "Red Wine Light v3",
-    colors: ["#4d1f2d", "#8c2f39", "#b76e79", "#e8c7cf", "#fcf4f6"],
+    colors: ["#8c2f39", "#4d1f2d", "#fcf4f6", "#e8c7cf", "#b76e79"],
     vars: {
       "--bg": "#fcf4f6",
       "--bg-alt": "#f9f0f2",
@@ -379,9 +447,26 @@ const palettes = [
       "--text": "#2c161d",
       "--text-light": "#6e3b4a",
       "--text-muted": "#a66c7a",
-      "--accent": "#8c2f39",
-      "--accent-light": "#b76e79",
-      "--accent-dark": "#4d1f2d",
+      "--accent": "#4d1f2d",
+      "--accent-light": "#fcf4f6",
+      "--accent-dark": "#b76e79",
+      "--border": "#e0c5cc",
+      "--nav-bg": "rgba(252, 244, 246, 0.94)"
+    }
+  },
+  {
+    name: "Red Wine Light v4",
+    colors: ["#4d1f2d", "#fcf4f6", "#e8c7cf", "#b76e79", "#8c2f39"],
+    vars: {
+      "--bg": "#fcf4f6",
+      "--bg-alt": "#f9f0f2",
+      "--panel": "rgba(255, 252, 253, 0.92)",
+      "--text": "#2c161d",
+      "--text-light": "#6e3b4a",
+      "--text-muted": "#a66c7a",
+      "--accent": "#fcf4f6",
+      "--accent-light": "#e8c7cf",
+      "--accent-dark": "#8c2f39",
       "--border": "#e0c5cc",
       "--nav-bg": "rgba(252, 244, 246, 0.94)"
     }
@@ -425,13 +510,13 @@ const palettes = [
     colors: ["#C87D87", "#FBEAD6", "#6B7556", "#E5BCA9", "#F0C4CB"],
     vars: {
       "--bg": "#f5d0d5",
-      "--bg-alt": "#6b7556",
+      "--bg-alt": "#E5BCA9",
       "--panel": "rgba(255, 247, 241, 0.92)",
       "--text": "#38412f",
       "--text-light": "#5f584f",
       "--text-muted": "#83786f",
-      "--accent": "#c87d87",
-      "--accent-light": "#e5bca9",
+      "--accent": "#FBEAD6",
+      "--accent-light": "#F0C4CB",
       "--accent-dark": "#914f58",
       "--border": "#d7b29f",
       "--nav-bg": "rgba(245, 208, 213, 0.94)"
@@ -442,13 +527,13 @@ const palettes = [
     colors: ["#FBEAD6", "#6B7556", "#E5BCA9", "#F0C4CB", "#C87D87"],
     vars: {
       "--bg": "#f5d0d5",
-      "--bg-alt": "#6b7556",
+      "--bg-alt": "#F0C4CB",
       "--panel": "rgba(255, 247, 241, 0.92)",
       "--text": "#38412f",
       "--text-light": "#5f584f",
       "--text-muted": "#83786f",
-      "--accent": "#c87d87",
-      "--accent-light": "#e5bca9",
+      "--accent": "#6B7556",
+      "--accent-light": "#C87D87",
       "--accent-dark": "#914f58",
       "--border": "#d7b29f",
       "--nav-bg": "rgba(245, 208, 213, 0.94)"
@@ -456,16 +541,33 @@ const palettes = [
   },
   {
     name: "Pinterest Product Stylish v3",
-    colors: ["#E5BCA9", "#6B7556", "#FBEAD6", "#C87D87", "#F0C4CB"],
+    colors: ["#6B7556", "#E5BCA9", "#F0C4CB", "#C87D87", "#FBEAD6"],
     vars: {
       "--bg": "#f5d0d5",
-      "--bg-alt": "#6b7556",
+      "--bg-alt": "#C87D87",
       "--panel": "rgba(255, 247, 241, 0.92)",
       "--text": "#38412f",
       "--text-light": "#5f584f",
       "--text-muted": "#83786f",
-      "--accent": "#c87d87",
-      "--accent-light": "#e5bca9",
+      "--accent": "#E5BCA9",
+      "--accent-light": "#FBEAD6",
+      "--accent-dark": "#914f58",
+      "--border": "#d7b29f",
+      "--nav-bg": "rgba(245, 208, 213, 0.94)"
+    }
+  },
+  {
+    name: "Pinterest Product Stylish v4",
+    colors: ["#E5BCA9", "#F0C4CB", "#C87D87", "#FBEAD6", "#6B7556"],
+    vars: {
+      "--bg": "#f5d0d5",
+      "--bg-alt": "#FBEAD6",
+      "--panel": "rgba(255, 247, 241, 0.92)",
+      "--text": "#38412f",
+      "--text-light": "#5f584f",
+      "--text-muted": "#83786f",
+      "--accent": "#F0C4CB",
+      "--accent-light": "#6B7556",
       "--accent-dark": "#914f58",
       "--border": "#d7b29f",
       "--nav-bg": "rgba(245, 208, 213, 0.94)"
