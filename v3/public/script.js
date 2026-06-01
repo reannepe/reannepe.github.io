@@ -1,131 +1,137 @@
 const galleryItems = [
   {
     src: "./images/selected/interior-living-01.jpg",
-    title: "Living area",
-    topLabel: "3D Visualization Renderings",
-    bottomLabel: "Interior • Residential",
-    primary: ["visualization", "interior"],
-    secondary: ["residential"]
+    title: "Living Area",
+    badges: ["Render", "Residential", "Interior"],
+    main: "render",
+    sector: "residential",
+    type: "interior",
+    group: "render-residential-interior"
   },
   {
     src: "./images/selected/interior-bedroom-01.jpg",
     title: "Bedroom",
-    topLabel: "3D Visualization Renderings",
-    bottomLabel: "Interior • Residential",
-    primary: ["visualization", "interior"],
-    secondary: ["residential"]
+    badges: ["Render", "Residential", "Interior"],
+    main: "render",
+    sector: "residential",
+    type: "interior",
+    group: "render-residential-interior"
   },
   {
     src: "./images/selected/interior-dining-01.jpg",
-    title: "Dining area",
-    topLabel: "3D Visualization Renderings",
-    bottomLabel: "Interior • Residential",
-    primary: ["visualization", "interior"],
-    secondary: ["residential"]
+    title: "Dining Area",
+    badges: ["Render", "Residential", "Interior"],
+    main: "render",
+    sector: "residential",
+    type: "interior",
+    group: "render-residential-interior"
   },
   {
     src: "./images/selected/interior-kitchen-01.jpg",
     title: "Kitchen",
-    topLabel: "3D Visualization Renderings",
-    bottomLabel: "Interior • Residential",
-    primary: ["visualization", "interior"],
-    secondary: ["residential"]
-  },
-  {
-    src: "./images/selected/interior-lounge-01.jpg",
-    title: "Lounge",
-    topLabel: "3D Visualization Renderings",
-    bottomLabel: "Interior • Residential",
-    primary: ["visualization", "interior"],
-    secondary: ["residential"]
+    badges: ["Render", "Residential", "Interior"],
+    main: "render",
+    sector: "residential",
+    type: "interior",
+    group: "render-residential-interior"
   },
   {
     src: "./images/selected/commercial-retail-01.jpg",
-    title: "Retail interior",
-    topLabel: "3D Visualization Renderings",
-    bottomLabel: "Interior • Commercial",
-    primary: ["visualization", "interior"],
-    secondary: ["commercial"]
+    title: "Retail Interior",
+    badges: ["Render", "Commercial", "Interior"],
+    main: "render",
+    sector: "commercial",
+    type: "interior",
+    group: "render-commercial-interior"
   },
   {
     src: "./images/selected/commercial-cafe-01.jpg",
-    title: "Cafe perspective",
-    topLabel: "Sample Full-Set Interior Design Project",
-    bottomLabel: "Interior • Commercial",
-    primary: ["coffee-set", "full-interior"],
-    secondary: ["commercial"]
+    title: "Cafe Perspective",
+    badges: ["Full-Set", "Commercial", "Coffee Set"],
+    main: "full-set",
+    sector: "commercial",
+    type: "coffee-set",
+    group: "full-set-coffee"
   },
   {
     src: "./images/selected/commercial-plan-01.jpg",
-    title: "Cafe plan board",
-    topLabel: "Sample Full-Set Interior Design Project",
-    bottomLabel: "Technical • Commercial",
-    primary: ["coffee-set", "full-interior"],
-    secondary: ["commercial", "technical"]
+    title: "Cafe Plan Board",
+    badges: ["Full-Set", "Commercial", "Coffee Set"],
+    main: "full-set",
+    sector: "commercial",
+    type: "coffee-set",
+    group: "full-set-coffee"
   },
   {
     src: "./images/selected/exterior-house-01.jpg",
-    title: "Residential facade",
-    topLabel: "3D Visualization Renderings",
-    bottomLabel: "Exterior • Residential",
-    primary: ["visualization", "exterior"],
-    secondary: ["residential"]
+    title: "Residential Facade",
+    badges: ["Render", "Residential", "Exterior"],
+    main: "render",
+    sector: "residential",
+    type: "exterior",
+    group: "render-residential-exterior"
   },
   {
     src: "./images/selected/exterior-house-02.jpg",
-    title: "House perspective",
-    topLabel: "3D Visualization Renderings",
-    bottomLabel: "Exterior • Residential",
-    primary: ["visualization", "exterior"],
-    secondary: ["residential"]
+    title: "House Perspective",
+    badges: ["Render", "Residential", "Exterior"],
+    main: "render",
+    sector: "residential",
+    type: "exterior",
+    group: "render-residential-exterior"
   },
   {
     src: "./images/selected/exterior-dormitel-01.jpg",
-    title: "Dormitel exterior",
-    topLabel: "3D Visualization Renderings",
-    bottomLabel: "Exterior • Residential",
-    primary: ["visualization", "exterior"],
-    secondary: ["residential"]
+    title: "Dormitel Exterior",
+    badges: ["Render", "Residential", "Exterior"],
+    main: "render",
+    sector: "residential",
+    type: "exterior",
+    group: "render-residential-exterior"
   },
   {
     src: "./images/selected/exterior-resort-01.jpg",
-    title: "Resort view",
-    topLabel: "3D Visualization Renderings",
-    bottomLabel: "Exterior • Commercial",
-    primary: ["visualization", "exterior"],
-    secondary: ["commercial"]
+    title: "Resort View",
+    badges: ["Render", "Commercial", "Exterior"],
+    main: "render",
+    sector: "commercial",
+    type: "exterior",
+    group: "render-commercial-exterior"
   },
   {
     src: "./images/plans/a-01.jpg",
-    title: "Architectural sheet preview",
-    topLabel: "Sample Full-Set Architectural Project",
-    bottomLabel: "Technical • Drawings",
-    primary: ["full-architecture"],
-    secondary: ["technical"]
+    title: "Architectural Sheet",
+    badges: ["Full-Set", "Residential", "Architecture Set"],
+    main: "full-set",
+    sector: "residential",
+    type: "architecture-set",
+    group: "full-set-architecture"
   },
   {
     src: "./images/plans/a1.jpg",
-    title: "Building plan sheet",
-    topLabel: "Sample Full-Set Architectural Project",
-    bottomLabel: "Technical • Drawings",
-    primary: ["full-architecture"],
-    secondary: ["technical"]
+    title: "Building Plan Sheet",
+    badges: ["Full-Set", "Residential", "Architecture Set"],
+    main: "full-set",
+    sector: "residential",
+    type: "architecture-set",
+    group: "full-set-architecture"
   },
   {
     src: "./images/plans/power-layout.jpg",
-    title: "Power layout",
-    topLabel: "Sample Full-Set Architectural Interior Project",
-    bottomLabel: "Technical • Drawings",
-    primary: ["full-interior"],
-    secondary: ["technical"]
+    title: "Power Layout",
+    badges: ["Full-Set", "Commercial", "Interior Set"],
+    main: "full-set",
+    sector: "commercial",
+    type: "interior-set",
+    group: "full-set-interior"
   }
 ];
 
 const projectDetails = {
   "residential-interior": {
-    label: "Featured Project 01",
-    title: "Residential Interior Project Placeholder",
-    description: "This popup is reserved for a finished residential interior case study with better captions, before-and-after reasoning, more images, and a stronger written walkthrough.",
+    label: "01 • Residential Interior Project",
+    title: "Placeholder for a curated residential interior case study",
+    text: "This popup is reserved for the final curated project version with better captions, more process images, and stronger problem-solution context.",
     images: [
       "./images/selected/interior-bedroom-01.jpg",
       "./images/selected/interior-dining-01.jpg",
@@ -133,9 +139,9 @@ const projectDetails = {
     ]
   },
   "full-set-architecture": {
-    label: "Featured Project 02",
-    title: "Full-Set Architecture Project Placeholder",
-    description: "This popup will hold a complete architectural set with the selected project drawings, perspectives, and fuller project explanation once the final folder is supplied.",
+    label: "02 • Full-Set Architecture Project",
+    title: "Placeholder for a complete architecture set",
+    text: "This popup will hold a selected project where drawings, plans, and supporting renderings should stay together in one architecture story.",
     images: [
       "./images/selected/exterior-dormitel-01.jpg",
       "./images/plans/a-01.jpg",
@@ -143,9 +149,9 @@ const projectDetails = {
     ]
   },
   "full-set-interior": {
-    label: "Featured Project 03",
-    title: "Sample Full-Set Interior Design Project Placeholder",
-    description: "This popup is intended for the coffee house or another full interior design package with mood board, floor plan, section, and render sequence kept together.",
+    label: "03 • Sample Full-Set Interior Design Project",
+    title: "Placeholder for a coffee house or similar full-set interior package",
+    text: "This popup is intended for a grouped interior design set with renderings, boards, plans, and sections together.",
     images: [
       "./images/selected/commercial-cafe-01.jpg",
       "./images/selected/commercial-plan-01.jpg",
@@ -154,182 +160,170 @@ const projectDetails = {
   }
 };
 
-const state = {
-  primary: "all",
-  secondary: "all",
-  visibleItems: [],
-  activeIndex: 0
-};
-
-const galleryGrid = document.getElementById("galleryGrid");
-const primaryFilters = document.getElementById("primaryFilters");
-const secondaryFilters = document.getElementById("secondaryFilters");
-const lightboxModal = document.getElementById("lightboxModal");
-const lightboxImage = document.getElementById("lightboxImage");
+const gallery = document.getElementById("gallery");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
 const lightboxCaption = document.getElementById("lightboxCaption");
+const lightboxClose = document.getElementById("lightboxClose");
 const lightboxPrev = document.getElementById("lightboxPrev");
 const lightboxNext = document.getElementById("lightboxNext");
-const lightboxClose = document.getElementById("lightboxClose");
-const projectModal = document.getElementById("projectModal");
-const projectClose = document.getElementById("projectClose");
-const projectModalLabel = document.getElementById("projectModalLabel");
-const projectModalTitle = document.getElementById("projectModalTitle");
-const projectModalDescription = document.getElementById("projectModalDescription");
-const projectModalGallery = document.getElementById("projectModalGallery");
-const menuToggle = document.getElementById("menuToggle");
-const siteNav = document.getElementById("siteNav");
+const projectDialog = document.getElementById("projectDialog");
+const projectDialogClose = document.getElementById("projectDialogClose");
+const projectDialogLabel = document.getElementById("projectDialogLabel");
+const projectDialogTitle = document.getElementById("projectDialogTitle");
+const projectDialogText = document.getElementById("projectDialogText");
+const projectDialogGallery = document.getElementById("projectDialogGallery");
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
 
-function matchesPrimary(item) {
-  return state.primary === "all" || item.primary.includes(state.primary);
-}
+const state = {
+  main: "all",
+  sector: "all",
+  type: "all",
+  visibleItems: [],
+  lightboxItems: [],
+  currentIndex: 0
+};
 
-function matchesSecondary(item) {
-  return state.secondary === "all" || item.secondary.includes(state.secondary);
+function matchesFilter(item) {
+  const mainOk = state.main === "all" || item.main === state.main;
+  const sectorOk = state.sector === "all" || item.sector === state.sector;
+  const typeOk = state.type === "all" || item.type === state.type;
+  return mainOk && sectorOk && typeOk;
 }
 
 function getVisibleItems() {
-  return galleryItems.filter((item) => matchesPrimary(item) && matchesSecondary(item));
+  return galleryItems.filter(matchesFilter);
 }
 
 function renderGallery() {
   state.visibleItems = getVisibleItems();
-  galleryGrid.innerHTML = "";
+  gallery.innerHTML = "";
 
-  state.visibleItems.forEach((item, index) => {
-    const figure = document.createElement("figure");
-    figure.className = "gallery-item";
-    figure.tabIndex = 0;
-    figure.innerHTML = `
-      <img src="${item.src}" alt="${item.title}" />
-      <figcaption class="gallery-caption">
-        <div class="card-caption-top">
-          <span>${item.topLabel}</span>
-          <span>${item.bottomLabel}</span>
-        </div>
+  state.visibleItems.forEach((item) => {
+    const card = document.createElement("button");
+    card.type = "button";
+    card.className = "gallery-item";
+    card.innerHTML = `
+      <div class="gallery-badges">
+        ${item.badges.map((badge) => `<span class="gallery-badge">${badge}</span>`).join("")}
+      </div>
+      <img src="${item.src}" alt="${item.title}" loading="eager" />
+      <div class="gallery-overlay">
         <strong class="gallery-title">${item.title}</strong>
-        <span class="gallery-meta">Grouped viewer opens within this category</span>
-      </figcaption>
+      </div>
     `;
-    figure.addEventListener("click", () => openLightbox(index));
-    figure.addEventListener("keydown", (event) => {
-      if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        openLightbox(index);
-      }
-    });
-    galleryGrid.appendChild(figure);
+    card.addEventListener("click", () => openLightboxForGroup(item));
+    gallery.appendChild(card);
   });
 }
 
-function openLightbox(index) {
-  state.activeIndex = index;
+function openLightboxForGroup(item) {
+  state.lightboxItems = state.visibleItems.filter((candidate) => candidate.group === item.group);
+  if (!state.lightboxItems.length) {
+    state.lightboxItems = [item];
+  }
+  state.currentIndex = state.lightboxItems.findIndex((candidate) => candidate.src === item.src);
+  if (state.currentIndex < 0) {
+    state.currentIndex = 0;
+  }
   updateLightbox();
-  lightboxModal.showModal();
+  lightbox.classList.add("open");
+  lightbox.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
 }
 
 function updateLightbox() {
-  const item = state.visibleItems[state.activeIndex];
-  if (!item) {
-    return;
-  }
-  lightboxImage.src = item.src;
-  lightboxImage.alt = item.title;
-  lightboxCaption.textContent = `${item.title} — ${item.topLabel} — ${item.bottomLabel}`;
+  const item = state.lightboxItems[state.currentIndex];
+  if (!item) return;
+  lightboxImg.src = item.src;
+  lightboxImg.alt = item.title;
+  lightboxCaption.textContent = `${item.title} • ${item.badges.join(" • ")}`;
 }
 
-function cycleLightbox(direction) {
-  if (!state.visibleItems.length) {
-    return;
-  }
-  state.activeIndex = (state.activeIndex + direction + state.visibleItems.length) % state.visibleItems.length;
+function closeLightbox() {
+  lightbox.classList.remove("open");
+  lightbox.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+function prevImage() {
+  if (!state.lightboxItems.length) return;
+  state.currentIndex = (state.currentIndex - 1 + state.lightboxItems.length) % state.lightboxItems.length;
+  updateLightbox();
+}
+
+function nextImage() {
+  if (!state.lightboxItems.length) return;
+  state.currentIndex = (state.currentIndex + 1) % state.lightboxItems.length;
   updateLightbox();
 }
 
 function setFilter(group, value) {
   state[group] = value;
-  document
-    .querySelectorAll(`[data-filter-group="${group}"]`)
-    .forEach((button) => button.classList.toggle("is-active", button.dataset.filter === value));
+  document.querySelectorAll(`.filter-btn[data-group="${group}"]`).forEach((button) => {
+    button.classList.toggle("active", button.dataset.filter === value);
+  });
   renderGallery();
 }
 
-function openProjectModal(projectKey) {
-  const project = projectDetails[projectKey];
-  if (!project) {
-    return;
-  }
-
-  projectModalLabel.textContent = project.label;
-  projectModalTitle.textContent = project.title;
-  projectModalDescription.textContent = project.description;
-  projectModalGallery.innerHTML = "";
-
-  project.images.forEach((src, index) => {
-    const img = document.createElement("img");
-    img.src = src;
-    img.alt = `${project.title} placeholder image ${index + 1}`;
-    projectModalGallery.appendChild(img);
+document.querySelectorAll(".filter-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    setFilter(button.dataset.group, button.dataset.filter);
   });
-
-  projectModal.showModal();
-}
-
-primaryFilters.addEventListener("click", (event) => {
-  const button = event.target.closest("button[data-filter]");
-  if (!button) {
-    return;
-  }
-  setFilter("primary", button.dataset.filter);
 });
-
-secondaryFilters.addEventListener("click", (event) => {
-  const button = event.target.closest("button[data-filter]");
-  if (!button) {
-    return;
-  }
-  setFilter("secondary", button.dataset.filter);
-});
-
-lightboxPrev.addEventListener("click", () => cycleLightbox(-1));
-lightboxNext.addEventListener("click", () => cycleLightbox(1));
-lightboxClose.addEventListener("click", () => lightboxModal.close());
-projectClose.addEventListener("click", () => projectModal.close());
 
 document.querySelectorAll("[data-project]").forEach((button) => {
-  button.addEventListener("click", () => openProjectModal(button.dataset.project));
-});
-
-[lightboxModal, projectModal].forEach((modal) => {
-  modal.addEventListener("click", (event) => {
-    const bounds = modal.getBoundingClientRect();
-    const outside = event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom;
-    if (outside) {
-      modal.close();
-    }
+  button.addEventListener("click", () => {
+    const details = projectDetails[button.dataset.project];
+    if (!details) return;
+    projectDialogLabel.textContent = details.label;
+    projectDialogTitle.textContent = details.title;
+    projectDialogText.textContent = details.text;
+    projectDialogGallery.innerHTML = details.images.map((src, index) => (
+      `<img src="${src}" alt="${details.title} placeholder image ${index + 1}" />`
+    )).join("");
+    projectDialog.showModal();
   });
 });
 
+lightboxClose.addEventListener("click", closeLightbox);
+lightboxPrev.addEventListener("click", prevImage);
+lightboxNext.addEventListener("click", nextImage);
+projectDialogClose.addEventListener("click", () => projectDialog.close());
+
 document.addEventListener("keydown", (event) => {
-  if (lightboxModal.open) {
-    if (event.key === "ArrowLeft") {
-      cycleLightbox(-1);
-    }
-    if (event.key === "ArrowRight") {
-      cycleLightbox(1);
-    }
+  if (lightbox.classList.contains("open")) {
+    if (event.key === "Escape") closeLightbox();
+    if (event.key === "ArrowLeft") prevImage();
+    if (event.key === "ArrowRight") nextImage();
   }
 });
 
-menuToggle.addEventListener("click", () => {
-  const open = siteNav.classList.toggle("is-open");
-  menuToggle.setAttribute("aria-expanded", String(open));
+lightbox.addEventListener("click", (event) => {
+  if (event.target === lightbox) closeLightbox();
 });
 
-siteNav.addEventListener("click", (event) => {
-  if (event.target instanceof HTMLAnchorElement) {
-    siteNav.classList.remove("is-open");
-    menuToggle.setAttribute("aria-expanded", "false");
+projectDialog.addEventListener("click", (event) => {
+  const bounds = projectDialog.getBoundingClientRect();
+  const outside =
+    event.clientX < bounds.left ||
+    event.clientX > bounds.right ||
+    event.clientY < bounds.top ||
+    event.clientY > bounds.bottom;
+  if (outside) {
+    projectDialog.close();
   }
+});
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navLinks.classList.toggle("open");
+});
+
+navLinks.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navLinks.classList.remove("open");
 });
 
 renderGallery();
