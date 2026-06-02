@@ -1,6 +1,6 @@
 const galleryItems = [
   {
-    src: "./images/featured/urbina-residence-03.jpg",
+    src: "./source-assets/for-website-projects-grouped/featured-projects/1-urbina-residence/3.jpg",
     title: "Urbina Residence — Living Area",
     badges: ["Render", "Residential", "Interior"],
     main: "render",
@@ -8,10 +8,12 @@ const galleryItems = [
     type: "interior",
     project: "Urbina Residence",
     location: "Makati City",
-    group: "urbina-residence"
+    group: "urbina-residence",
+    sourceBucket: "featured-projects/1-urbina-residence",
+    sourcePath: "./source-assets/for-website-projects-grouped/featured-projects/1-urbina-residence/3.jpg"
   },
   {
-    src: "./images/featured/urbina-residence-01.jpg",
+    src: "./source-assets/for-website-projects-grouped/featured-projects/1-urbina-residence/1.jpg",
     title: "Urbina Residence — Divider and Sleeping Area",
     badges: ["Render", "Residential", "Interior"],
     main: "render",
@@ -19,10 +21,12 @@ const galleryItems = [
     type: "interior",
     project: "Urbina Residence",
     location: "Makati City",
-    group: "urbina-residence"
+    group: "urbina-residence",
+    sourceBucket: "featured-projects/1-urbina-residence",
+    sourcePath: "./source-assets/for-website-projects-grouped/featured-projects/1-urbina-residence/1.jpg"
   },
   {
-    src: "./images/featured/urbina-residence-04.jpg",
+    src: "./source-assets/for-website-projects-grouped/featured-projects/1-urbina-residence/4.jpg",
     title: "Urbina Residence — Dining and Living",
     badges: ["Render", "Residential", "Interior"],
     main: "render",
@@ -30,10 +34,12 @@ const galleryItems = [
     type: "interior",
     project: "Urbina Residence",
     location: "Makati City",
-    group: "urbina-residence"
+    group: "urbina-residence",
+    sourceBucket: "featured-projects/1-urbina-residence",
+    sourcePath: "./source-assets/for-website-projects-grouped/featured-projects/1-urbina-residence/4.jpg"
   },
   {
-    src: "./images/featured/urbina-residence-02.jpg",
+    src: "./source-assets/for-website-projects-grouped/featured-projects/1-urbina-residence/2.jpg",
     title: "Urbina Residence — Compact Kitchen",
     badges: ["Render", "Residential", "Interior"],
     main: "render",
@@ -41,10 +47,12 @@ const galleryItems = [
     type: "interior",
     project: "Urbina Residence",
     location: "Makati City",
-    group: "urbina-residence"
+    group: "urbina-residence",
+    sourceBucket: "featured-projects/1-urbina-residence",
+    sourcePath: "./source-assets/for-website-projects-grouped/featured-projects/1-urbina-residence/2.jpg"
   },
   {
-    src: "./images/commercial/ready-set-learn-03.jpg",
+    src: "./source-assets/for-website-projects-grouped/interior-renders/commercial/3.jpg",
     title: "Ready, Set, Learn — Activity Area",
     badges: ["Render", "Commercial", "Interior"],
     main: "render",
@@ -52,10 +60,12 @@ const galleryItems = [
     type: "interior",
     project: "Ready, Set, Learn",
     location: "Quezon City",
-    group: "ready-set-learn"
+    group: "ready-set-learn",
+    sourceBucket: "interior-renders/commercial",
+    sourcePath: "./source-assets/for-website-projects-grouped/interior-renders/commercial/3.jpg"
   },
   {
-    src: "./images/exterior/carwash-cafe-exterior.png",
+    src: "./source-assets/for-website-projects-grouped/exterior-renders-residential-commercial-hospitality/Carwash%20and%20Cafe.png",
     title: "Carwash Cafe Concept — Exterior Perspective",
     badges: ["Render", "Commercial", "Exterior"],
     main: "render",
@@ -63,10 +73,12 @@ const galleryItems = [
     type: "exterior",
     project: "Carwash Cafe Concept",
     location: "",
-    group: "carwash-cafe"
+    group: "carwash-cafe",
+    sourceBucket: "exterior-renders-residential-commercial-hospitality",
+    sourcePath: "./source-assets/for-website-projects-grouped/exterior-renders-residential-commercial-hospitality/Carwash%20and%20Cafe.png"
   },
   {
-    src: "./images/commercial/retail-store-concept.png",
+    src: "./source-assets/for-website-projects-grouped/interior-renders/commercial/Retail%20Store.png",
     title: "Retail Store Concept — Interior Perspective",
     badges: ["Render", "Commercial", "Interior"],
     main: "render",
@@ -74,32 +86,38 @@ const galleryItems = [
     type: "interior",
     project: "Retail Store Concept",
     location: "",
-    group: "retail-store-concept"
+    group: "retail-store-concept",
+    sourceBucket: "interior-renders/commercial",
+    sourcePath: "./source-assets/for-website-projects-grouped/interior-renders/commercial/Retail%20Store.png"
   },
   {
-    src: "./images/exterior/antipolo-residence-facade.png",
-    title: "Antipolo Residence — Facade Study",
+    src: "./source-assets/for-website-projects-grouped/exterior-renders-residential-commercial-hospitality/1.png",
+    title: "Residential House — Facade Study",
     badges: ["Render", "Residential", "Exterior"],
     main: "render",
     sector: "residential",
     type: "exterior",
-    project: "Antipolo Residence",
-    location: "Antipolo",
-    group: "house-exterior"
+    project: "Residential House",
+    location: "",
+    group: "house-exterior",
+    sourceBucket: "exterior-renders-residential-commercial-hospitality",
+    sourcePath: "./source-assets/for-website-projects-grouped/exterior-renders-residential-commercial-hospitality/1.png"
   },
   {
-    src: "./images/exterior/antipolo-residence-perspective.png",
-    title: "Antipolo Residence — Exterior Perspective",
+    src: "./source-assets/for-website-projects-grouped/exterior-renders-residential-commercial-hospitality/2.png",
+    title: "Residential House — Exterior Perspective",
     badges: ["Render", "Residential", "Exterior"],
     main: "render",
     sector: "residential",
     type: "exterior",
-    project: "Antipolo Residence",
-    location: "Antipolo",
-    group: "house-exterior"
+    project: "Residential House",
+    location: "",
+    group: "house-exterior",
+    sourceBucket: "exterior-renders-residential-commercial-hospitality",
+    sourcePath: "./source-assets/for-website-projects-grouped/exterior-renders-residential-commercial-hospitality/2.png"
   },
   {
-    src: "./images/exterior/one-florida-place-exterior.png",
+    src: "./source-assets/for-website-projects-grouped/exterior-renders-residential-commercial-hospitality/Dormitel.png",
     title: "One Florida Place — Dormitel Exterior",
     badges: ["Render", "Residential", "Exterior"],
     main: "render",
@@ -107,18 +125,22 @@ const galleryItems = [
     type: "exterior",
     project: "One Florida Place Dormitel",
     location: "Valenzuela City",
-    group: "one-florida-place"
+    group: "one-florida-place",
+    sourceBucket: "exterior-renders-residential-commercial-hospitality",
+    sourcePath: "./source-assets/for-website-projects-grouped/exterior-renders-residential-commercial-hospitality/Dormitel.png"
   },
   {
-    src: "./images/exterior/tagaytay-resort-exterior.png",
-    title: "Tagaytay Resort — Exterior View",
+    src: "./source-assets/for-website-projects-grouped/exterior-renders-residential-commercial-hospitality/Resort.png",
+    title: "Resort — Exterior View",
     badges: ["Render", "Commercial", "Exterior"],
     main: "render",
     sector: "commercial",
     type: "exterior",
-    project: "Tagaytay Event's Place and Resort",
-    location: "Tagaytay",
-    group: "tagaytay-resort"
+    project: "Resort",
+    location: "",
+    group: "tagaytay-resort",
+    sourceBucket: "exterior-renders-residential-commercial-hospitality",
+    sourcePath: "./source-assets/for-website-projects-grouped/exterior-renders-residential-commercial-hospitality/Resort.png"
   },
   {
     src: "./images/plans/a-01.jpg",
@@ -129,7 +151,9 @@ const galleryItems = [
     type: "drawing",
     project: "Ready, Set, Learn",
     location: "Quezon City",
-    group: "ready-set-learn"
+    group: "ready-set-learn",
+    sourceBucket: "full-set-with-working-drawings/architectural-interiors/play-school-therapy-center",
+    sourcePath: "./source-assets/for-website-projects-grouped/full-set-with-working-drawings/architectural-interiors/play-school-therapy-center/A-01.pdf"
   },
   {
     src: "./images/plans/a1.jpg",
@@ -143,7 +167,7 @@ const galleryItems = [
     group: "one-florida-place"
   },
   {
-    src: "./images/commercial/rocket-coffee-01.jpg",
+    src: "./source-assets/for-website-projects-grouped/interior-renders/commercial/image_123650291(6).JPG",
     title: "Rocket Coffee Co. Booth — Perspective 01",
     badges: ["Render", "Commercial", "Interior"],
     main: "render",
@@ -151,10 +175,12 @@ const galleryItems = [
     type: "interior",
     project: "Rocket Coffee Co. Booth",
     location: "San Juan City",
-    group: "rocket-coffee-booth"
+    group: "rocket-coffee-booth",
+    sourceBucket: "interior-renders/commercial",
+    sourcePath: "./source-assets/for-website-projects-grouped/interior-renders/commercial/image_123650291(6).JPG"
   },
   {
-    src: "./images/exterior/vertis-garden-perspective.png",
+    src: "./source-assets/for-website-projects-grouped/exterior-renders-residential-commercial-hospitality/Vertis%20Garden.png",
     title: "Vertis Garden — Outdoor Landscape Perspective",
     badges: ["Render", "Commercial", "Exterior"],
     main: "render",
@@ -162,10 +188,12 @@ const galleryItems = [
     type: "exterior",
     project: "Vertis Garden",
     location: "",
-    group: "vertis-garden"
+    group: "vertis-garden",
+    sourceBucket: "exterior-renders-residential-commercial-hospitality",
+    sourcePath: "./source-assets/for-website-projects-grouped/exterior-renders-residential-commercial-hospitality/Vertis%20Garden.png"
   },
   {
-    src: "./images/commercial/rocket-coffee-02.jpg",
+    src: "./source-assets/for-website-projects-grouped/interior-renders/commercial/image_123650291(9).JPG",
     title: "Rocket Coffee Co. Booth — Perspective 02",
     badges: ["Render", "Commercial", "Interior"],
     main: "render",
@@ -173,7 +201,9 @@ const galleryItems = [
     type: "interior",
     project: "Rocket Coffee Co. Booth",
     location: "San Juan City",
-    group: "rocket-coffee-booth"
+    group: "rocket-coffee-booth",
+    sourceBucket: "interior-renders/commercial",
+    sourcePath: "./source-assets/for-website-projects-grouped/interior-renders/commercial/image_123650291(9).JPG"
   },
   {
     src: "./images/selected/urban-jam-laundry-01.jpg",
@@ -184,7 +214,9 @@ const galleryItems = [
     type: "drawing",
     project: "Urban Jam Laundry Shop",
     location: "",
-    group: "urban-jam-laundry"
+    group: "urban-jam-laundry",
+    sourceBucket: "full-set-with-working-drawings/architectural-interiors/urban-jam-laundry-shop",
+    sourcePath: "./source-assets/for-website-projects-grouped/full-set-with-working-drawings/architectural-interiors/urban-jam-laundry-shop/A1-%2020X30%20BLUEPRINT-%205%20COPIES-%20REANNE%20PE.pdf"
   }
 ];
 
@@ -194,35 +226,43 @@ const projectDetails = {
     title: "Opening up a compact Makati studio without losing comfort, privacy, or storage.",
     text: "Mr. and Mrs. Urbina's studio-type condominium unit in Makati City felt small and cramped because of the existing dividers. The redesign removes those heavy partitions and replaces them with a modular-and-glass divider system that preserves openness while adding storage, better zoning, and more flexibility. Light built-ins, warm wood tones, fabric textures, mirrors, and glass help the space feel brighter and larger, while flexible furniture solutions support both everyday living and guest use across a 5-week design-build scope.",
     images: [
-      "./images/featured/urbina-residence-01.jpg",
-      "./images/featured/urbina-residence-02.jpg",
-      "./images/featured/urbina-residence-03.jpg",
-      "./images/featured/urbina-residence-04.jpg"
-    ]
+      "./source-assets/for-website-projects-grouped/featured-projects/1-urbina-residence/1.jpg",
+      "./source-assets/for-website-projects-grouped/featured-projects/1-urbina-residence/2.jpg",
+      "./source-assets/for-website-projects-grouped/featured-projects/1-urbina-residence/3.jpg",
+      "./source-assets/for-website-projects-grouped/featured-projects/1-urbina-residence/4.jpg",
+      "./source-assets/for-website-projects-grouped/featured-projects/1-urbina-residence/5.jpg",
+      "./source-assets/for-website-projects-grouped/featured-projects/1-urbina-residence/6.jpg"
+    ],
+    sourceBucket: "featured-projects/1-urbina-residence"
   },
   "one-florida-place": {
     label: "02 • One Florida Place Dormitel",
     title: "Planning a high-capacity dormitel that still feels bright, efficient, and marketable.",
     text: "One Florida Place is a six-storey dormitel in Valenzuela City designed around the need for maximum room capacity, varied unit types, strong airflow, and good natural light. The concept balances a more upscale exterior image with cost-conscious construction while also accommodating penthouses, commercial areas for added income, parking, and a discreet utility zone. The project ran for 32 weeks across design and project management, with responsibilities spanning architecture, interiors, and presentation.",
     images: [
-      "./images/featured/one-florida-place-01.png",
-      "./images/featured/one-florida-place-02.jpg",
-      "./images/featured/one-florida-place-03.jpg",
-      "./images/featured/one-florida-place-04.jpg",
-      "./images/plans/a1.jpg",
-    ]
+      "./source-assets/for-website-projects-grouped/featured-projects/2-one-florida-place-dormitel/Dormitel.png",
+      "./source-assets/for-website-projects-grouped/featured-projects/2-one-florida-place-dormitel/LOBBY.jpg",
+      "./source-assets/for-website-projects-grouped/featured-projects/2-one-florida-place-dormitel/HALLWAY.jpg",
+      "./source-assets/for-website-projects-grouped/featured-projects/2-one-florida-place-dormitel/BEDROOM.jpg",
+      "./source-assets/for-website-projects-grouped/featured-projects/2-one-florida-place-dormitel/BIGGER%20ROOM.jpg",
+      "./images/plans/a1.jpg"
+    ],
+    sourceBucket: "featured-projects/2-one-florida-place-dormitel"
   },
   "ready-set-learn": {
     label: "03 • Ready, Set, Learn",
     title: "Designing a playful, calming learning space inside a compact therapy-center footprint.",
     text: "Ready, Set, Learn in Quezon City called for a playschool and therapy center that feels playful, welcoming, and baby-safe without becoming visually busy. The design uses a modern Scandinavian direction with muted pastel tones, light wood textures, playful fixtures, and compact planning moves that make the small floor area work harder. Foldable wall panels, hidden built-in storage, decorative ceiling elements, and glass dividers help the space stay flexible, secure, and easy to navigate throughout the 3-week design-only scope.",
     images: [
-      "./images/commercial/ready-set-learn-01.jpg",
-      "./images/commercial/ready-set-learn-02.jpg",
-      "./images/commercial/ready-set-learn-03.jpg",
-      "./images/commercial/ready-set-learn-04.jpg",
-      "./images/plans/a-01.jpg",
-    ]
+      "./source-assets/for-website-projects-grouped/interior-renders/commercial/1.jpg",
+      "./source-assets/for-website-projects-grouped/interior-renders/commercial/2.jpg",
+      "./source-assets/for-website-projects-grouped/interior-renders/commercial/3.jpg",
+      "./source-assets/for-website-projects-grouped/interior-renders/commercial/4.jpg",
+      "./source-assets/for-website-projects-grouped/interior-renders/commercial/5.jpg",
+      "./source-assets/for-website-projects-grouped/interior-renders/commercial/8.jpg",
+      "./images/plans/a-01.jpg"
+    ],
+    sourceBucket: "interior-renders/commercial + play-school-therapy-center"
   }
 };
 

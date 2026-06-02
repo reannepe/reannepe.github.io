@@ -1,22 +1,45 @@
 # Image Inventory — Gallery → Source Project Mapping
 
-## 2026-06-02 Canonical Web Assets
+## 2026-06-02 Canonical Source Mirror
 
-The site now uses project-grouped files from `/home/devj/Downloads/FOR WEBSITE PROJECTS GROUPED/` as the canonical source for the current web mappings.
+The ground-truth folder `/home/devj/Downloads/FOR WEBSITE PROJECTS GROUPED/` is now mirrored inside the repo at `source-assets/for-website-projects-grouped/`.
 
-| Web Asset | Project | Source |
+Directory structure preserved by bucket:
+- `source-assets/for-website-projects-grouped/featured-projects/`
+- `source-assets/for-website-projects-grouped/interior-renders/commercial/`
+- `source-assets/for-website-projects-grouped/interior-renders/residential/`
+- `source-assets/for-website-projects-grouped/exterior-renders-residential-commercial-hospitality/`
+- `source-assets/for-website-projects-grouped/full-set-with-working-drawings/`
+- `source-assets/for-website-projects-grouped/sample-mood-board/`
+- `source-assets/for-website-projects-grouped/specifications-writing/`
+
+Known project mappings used by the site are stored in `script.js` metadata via `project`, `sourceBucket`, and `sourcePath`.
+
+Legacy project-renamed copies under `images/featured/`, `images/commercial/`, and `images/exterior/` should be treated as older exports, not source of truth.
+
+## 2026-06-02 Commercial Render Hash Notes
+
+Grouped commercial files with confident identification:
+
+| Source File | Best Current Identification | Evidence |
 |-------|---------|--------|
-| `images/featured/urbina-residence-01.jpg` to `04.jpg` | **Urbina Residence** | `FEATURED PROJECTS/1 URBINA RESIDENCE/` |
-| `images/featured/one-florida-place-01.png` to `04.jpg` | **One Florida Place Dormitel** | `FEATURED PROJECTS/2 ONE FLORIDA PLACE DORMITEL/` |
-| `images/commercial/ready-set-learn-01.jpg` to `04.jpg` | **Ready, Set, Learn** | `Interior Renders/commercial/1.jpg` to `4.jpg` |
-| `images/commercial/rocket-coffee-01.jpg` and `02.jpg` | **Rocket Coffee Co. Booth** | `Interior Renders/commercial/image_123650291(6).JPG` and `(9).JPG` |
-| `images/exterior/antipolo-residence-facade.png` | **Antipolo Residence** | `Exterior Renders- residential_commercial_hospitality/1.png` |
-| `images/exterior/antipolo-residence-perspective.png` | **Antipolo Residence** | `Exterior Renders- residential_commercial_hospitality/2.png` |
-| `images/exterior/one-florida-place-exterior.png` | **One Florida Place Dormitel** | `Exterior Renders- residential_commercial_hospitality/Dormitel.png` |
-| `images/exterior/tagaytay-resort-exterior.png` | **Tagaytay Resort** | `Exterior Renders- residential_commercial_hospitality/Resort.png` |
-| `images/exterior/carwash-cafe-exterior.png` | **Carwash Cafe Concept** | `Exterior Renders- residential_commercial_hospitality/Carwash and Cafe.png` |
-| `images/exterior/vertis-garden-perspective.png` | **Vertis Garden** | `Exterior Renders- residential_commercial_hospitality/Vertis Garden.png` |
-| `images/branding/rp-logo-black.png` | **RP logo** | Wix fallback asset provided by user |
+| `1.jpg` to `5.jpg` | **Ready, Set, Learn** | Visual match to existing playschool renders and current site content |
+| `8.jpg` | **Ready, Set, Learn** | Visual storefront/exterior view of the same project |
+| `Retail Store.png` | **Retail Store Concept** | Exact md5 match to existing retail render |
+| `image_123650291(6).JPG` | **Rocket Coffee Co. Booth** | User-directed Rocket Coffee render; exact md5 match to prior imported copy |
+| `image_123650291(9).JPG` | **Rocket Coffee Co. Booth** | User-directed Rocket Coffee render; exact md5 match to prior imported copy |
+
+Grouped commercial files still needing manual inspection:
+
+| Source File | Hash Result | Current Note |
+|-------|---------|--------|
+| `5 (2).jpg` | PHASH `0.304485` vs existing `images/commercial/5.jpg` | Coffee shop cluster, not safe to auto-label |
+| `6.jpg` | PHASH `0.339598` vs existing `images/commercial/6.jpg` | Separate interior cluster, not safe to auto-label |
+| `7.jpg` | PHASH `0.400185` vs existing `images/commercial/7.jpg` | Separate interior cluster, not safe to auto-label |
+| `9.png` | PHASH `0.000386302` vs existing `images/commercial/9.jpg` | Near-identical to prior unknown render, still needs project name |
+| `10.jpg` | PHASH `0.475098` vs existing `images/commercial/10.jpg` | Coffee shop cluster, not safe to auto-label |
+| `26.jpg` | PHASH `0.498058` vs existing `images/commercial/26.jpg` | Coffee shop cluster, not safe to auto-label |
+| `27.jpg` | PHASH `0.0173658` vs existing `images/commercial/27.jpg` | Near-identical to prior unknown render, still needs project name |
 
 **Images unknown in source: 6 out of 16 gallery images have no confirmed project.** PHASH-matched all 16 against 16,518 images in cloud storage + backup drive — no project-original source files found anywhere. The repo's own `images/` directory is the only surviving copy (see PHASH sweep below).
 
