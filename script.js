@@ -1,6 +1,6 @@
 const galleryItems = [
   {
-    src: "./images/selected/interior-living-01.jpg",
+    src: "./images/featured/urbina-residence-03.jpg",
     title: "Urbina Residence — Living Area",
     badges: ["Render", "Residential", "Interior"],
     main: "render",
@@ -11,8 +11,8 @@ const galleryItems = [
     group: "urbina-residence"
   },
   {
-    src: "./images/selected/interior-bedroom-01.jpg",
-    title: "Urbina Residence — Bedroom",
+    src: "./images/featured/urbina-residence-01.jpg",
+    title: "Urbina Residence — Divider and Sleeping Area",
     badges: ["Render", "Residential", "Interior"],
     main: "render",
     sector: "residential",
@@ -22,7 +22,7 @@ const galleryItems = [
     group: "urbina-residence"
   },
   {
-    src: "./images/selected/interior-dining-01.jpg",
+    src: "./images/featured/urbina-residence-04.jpg",
     title: "Urbina Residence — Dining and Living",
     badges: ["Render", "Residential", "Interior"],
     main: "render",
@@ -33,7 +33,7 @@ const galleryItems = [
     group: "urbina-residence"
   },
   {
-    src: "./images/selected/interior-kitchen-01.jpg",
+    src: "./images/featured/urbina-residence-02.jpg",
     title: "Urbina Residence — Compact Kitchen",
     badges: ["Render", "Residential", "Interior"],
     main: "render",
@@ -44,8 +44,8 @@ const galleryItems = [
     group: "urbina-residence"
   },
   {
-    src: "./images/selected/commercial-retail-01.jpg",
-    title: "Ready, Set, Learn — Playschool Interior",
+    src: "./images/commercial/ready-set-learn-03.jpg",
+    title: "Ready, Set, Learn — Activity Area",
     badges: ["Render", "Commercial", "Interior"],
     main: "render",
     sector: "commercial",
@@ -55,30 +55,30 @@ const galleryItems = [
     group: "ready-set-learn"
   },
   {
-    src: "./images/selected/commercial-cafe-01.jpg",
-    title: "Carwash Cafe — Interior Perspective",
-    badges: ["Render", "Commercial", "Interior"],
+    src: "./images/exterior/carwash-cafe-exterior.png",
+    title: "Carwash Cafe Concept — Exterior Perspective",
+    badges: ["Render", "Commercial", "Exterior"],
     main: "render",
     sector: "commercial",
-    type: "interior",
+    type: "exterior",
     project: "Carwash Cafe Concept",
     location: "",
     group: "carwash-cafe"
   },
   {
-    src: "./images/selected/commercial-plan-01.jpg",
-    title: "Carwash Cafe — Plan Board",
+    src: "./images/commercial/retail-store-concept.png",
+    title: "Retail Store Concept — Interior Perspective",
     badges: ["Render", "Commercial", "Interior"],
     main: "render",
     sector: "commercial",
     type: "interior",
-    project: "Carwash Cafe Concept",
+    project: "Retail Store Concept",
     location: "",
-    group: "carwash-cafe"
+    group: "retail-store-concept"
   },
   {
-    src: "./images/selected/exterior-house-01.jpg",
-    title: "Residential House — Facade Study",
+    src: "./images/exterior/antipolo-residence-facade.png",
+    title: "Antipolo Residence — Facade Study",
     badges: ["Render", "Residential", "Exterior"],
     main: "render",
     sector: "residential",
@@ -88,8 +88,8 @@ const galleryItems = [
     group: "house-exterior"
   },
   {
-    src: "./images/selected/exterior-house-02.jpg",
-    title: "Residential House — Perspective",
+    src: "./images/exterior/antipolo-residence-perspective.png",
+    title: "Antipolo Residence — Exterior Perspective",
     badges: ["Render", "Residential", "Exterior"],
     main: "render",
     sector: "residential",
@@ -99,7 +99,7 @@ const galleryItems = [
     group: "house-exterior"
   },
   {
-    src: "./images/selected/exterior-dormitel-01.jpg",
+    src: "./images/exterior/one-florida-place-exterior.png",
     title: "One Florida Place — Dormitel Exterior",
     badges: ["Render", "Residential", "Exterior"],
     main: "render",
@@ -110,7 +110,7 @@ const galleryItems = [
     group: "one-florida-place"
   },
   {
-    src: "./images/selected/exterior-resort-01.jpg",
+    src: "./images/exterior/tagaytay-resort-exterior.png",
     title: "Tagaytay Resort — Exterior View",
     badges: ["Render", "Commercial", "Exterior"],
     main: "render",
@@ -143,18 +143,18 @@ const galleryItems = [
     group: "one-florida-place"
   },
   {
-    src: "./images/plans/power-layout.jpg",
-    title: "Rocket Coffee Booth — Power Layout",
-    badges: ["Full-Set", "Commercial", "Drawing / Plan"],
-    main: "full-set",
+    src: "./images/commercial/rocket-coffee-01.jpg",
+    title: "Rocket Coffee Co. Booth — Perspective 01",
+    badges: ["Render", "Commercial", "Interior"],
+    main: "render",
     sector: "commercial",
-    type: "drawing",
+    type: "interior",
     project: "Rocket Coffee Co. Booth",
     location: "San Juan City",
     group: "rocket-coffee-booth"
   },
   {
-    src: "./images/selected/vertis-garden.jpg",
+    src: "./images/exterior/vertis-garden-perspective.png",
     title: "Vertis Garden — Outdoor Landscape Perspective",
     badges: ["Render", "Commercial", "Exterior"],
     main: "render",
@@ -163,6 +163,17 @@ const galleryItems = [
     project: "Vertis Garden",
     location: "",
     group: "vertis-garden"
+  },
+  {
+    src: "./images/commercial/rocket-coffee-02.jpg",
+    title: "Rocket Coffee Co. Booth — Perspective 02",
+    badges: ["Render", "Commercial", "Interior"],
+    main: "render",
+    sector: "commercial",
+    type: "interior",
+    project: "Rocket Coffee Co. Booth",
+    location: "San Juan City",
+    group: "rocket-coffee-booth"
   },
   {
     src: "./images/selected/urban-jam-laundry-01.jpg",
@@ -180,33 +191,37 @@ const galleryItems = [
 const projectDetails = {
   "urbina-residence": {
     label: "01 • Urbina Residence",
-    title: "Reworking a cramped Makati studio into a warmer, more flexible home.",
-    text: "This condominium unit in Makati City started as a tight studio with existing dividers that made the space feel smaller and less usable. The concept removed old partitions and introduced a half-modular, half-glass divider strategy combined with storage-focused furniture planning. Light built-ins with wood and fabric contrast, carpet zoning, mirrors, and glass were used to enlarge the perceived space. The scope covered architectural interior design, project management, and modular contractor coordination over a 5-week design-build schedule.",
+    title: "Opening up a compact Makati studio without losing comfort, privacy, or storage.",
+    text: "Mr. and Mrs. Urbina's studio-type condominium unit in Makati City felt small and cramped because of the existing dividers. The redesign removes those heavy partitions and replaces them with a modular-and-glass divider system that preserves openness while adding storage, better zoning, and more flexibility. Light built-ins, warm wood tones, fabric textures, mirrors, and glass help the space feel brighter and larger, while flexible furniture solutions support both everyday living and guest use across a 5-week design-build scope.",
     images: [
-      "./images/selected/interior-living-01.jpg",
-      "./images/selected/interior-bedroom-01.jpg",
-      "./images/selected/interior-dining-01.jpg",
-      "./images/selected/interior-kitchen-01.jpg"
+      "./images/featured/urbina-residence-01.jpg",
+      "./images/featured/urbina-residence-02.jpg",
+      "./images/featured/urbina-residence-03.jpg",
+      "./images/featured/urbina-residence-04.jpg"
     ]
   },
   "one-florida-place": {
     label: "02 • One Florida Place Dormitel",
-    title: "Balancing room capacity, circulation, and presentation across a 6-storey concept.",
-    text: "A multi-storey dormitel in Valenzuela City requiring varied room types, commercial space, parking, and a stronger market presence, all within budget and lot constraints. The project maximized room count and variety while balancing cost, ventilation, commercial income spaces, and penthouse requirements. Scope covered overall project management plus exterior and interior design over a 32-week period.",
+    title: "Planning a high-capacity dormitel that still feels bright, efficient, and marketable.",
+    text: "One Florida Place is a six-storey dormitel in Valenzuela City designed around the need for maximum room capacity, varied unit types, strong airflow, and good natural light. The concept balances a more upscale exterior image with cost-conscious construction while also accommodating penthouses, commercial areas for added income, parking, and a discreet utility zone. The project ran for 32 weeks across design and project management, with responsibilities spanning architecture, interiors, and presentation.",
     images: [
-      "./images/selected/exterior-dormitel-01.jpg",
+      "./images/featured/one-florida-place-01.png",
+      "./images/featured/one-florida-place-02.jpg",
+      "./images/featured/one-florida-place-03.jpg",
+      "./images/featured/one-florida-place-04.jpg",
       "./images/plans/a1.jpg",
-      "./images/selected/interior-dining-01.jpg"
     ]
   },
   "ready-set-learn": {
     label: "03 • Ready, Set, Learn",
-    title: "Child-friendly planning and Scandinavian-inspired interiors for a small playschool fit-out.",
-    text: "Designed for a Quezon City playschool and therapy center with a playful, modern Scandinavian interior. The project solved exposed piping and limited floor area using muted pastel colors, light wood textures, fun fixtures, foldable wall panels, hidden built-in storage, decorative ceiling panels, and glass dividers. The 3-week design-only scope included a full drawing set with plans, sections, elevations, schedules, detailing, BOM, and signed-and-sealed blueprints.",
+    title: "Designing a playful, calming learning space inside a compact therapy-center footprint.",
+    text: "Ready, Set, Learn in Quezon City called for a playschool and therapy center that feels playful, welcoming, and baby-safe without becoming visually busy. The design uses a modern Scandinavian direction with muted pastel tones, light wood textures, playful fixtures, and compact planning moves that make the small floor area work harder. Foldable wall panels, hidden built-in storage, decorative ceiling elements, and glass dividers help the space stay flexible, secure, and easy to navigate throughout the 3-week design-only scope.",
     images: [
-      "./images/selected/commercial-retail-01.jpg",
+      "./images/commercial/ready-set-learn-01.jpg",
+      "./images/commercial/ready-set-learn-02.jpg",
+      "./images/commercial/ready-set-learn-03.jpg",
+      "./images/commercial/ready-set-learn-04.jpg",
       "./images/plans/a-01.jpg",
-      "./images/selected/interior-living-01.jpg"
     ]
   }
 };

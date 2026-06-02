@@ -1,5 +1,23 @@
 # Image Inventory — Gallery → Source Project Mapping
 
+## 2026-06-02 Canonical Web Assets
+
+The site now uses project-grouped files from `/home/devj/Downloads/FOR WEBSITE PROJECTS GROUPED/` as the canonical source for the current web mappings.
+
+| Web Asset | Project | Source |
+|-------|---------|--------|
+| `images/featured/urbina-residence-01.jpg` to `04.jpg` | **Urbina Residence** | `FEATURED PROJECTS/1 URBINA RESIDENCE/` |
+| `images/featured/one-florida-place-01.png` to `04.jpg` | **One Florida Place Dormitel** | `FEATURED PROJECTS/2 ONE FLORIDA PLACE DORMITEL/` |
+| `images/commercial/ready-set-learn-01.jpg` to `04.jpg` | **Ready, Set, Learn** | `Interior Renders/commercial/1.jpg` to `4.jpg` |
+| `images/commercial/rocket-coffee-01.jpg` and `02.jpg` | **Rocket Coffee Co. Booth** | `Interior Renders/commercial/image_123650291(6).JPG` and `(9).JPG` |
+| `images/exterior/antipolo-residence-facade.png` | **Antipolo Residence** | `Exterior Renders- residential_commercial_hospitality/1.png` |
+| `images/exterior/antipolo-residence-perspective.png` | **Antipolo Residence** | `Exterior Renders- residential_commercial_hospitality/2.png` |
+| `images/exterior/one-florida-place-exterior.png` | **One Florida Place Dormitel** | `Exterior Renders- residential_commercial_hospitality/Dormitel.png` |
+| `images/exterior/tagaytay-resort-exterior.png` | **Tagaytay Resort** | `Exterior Renders- residential_commercial_hospitality/Resort.png` |
+| `images/exterior/carwash-cafe-exterior.png` | **Carwash Cafe Concept** | `Exterior Renders- residential_commercial_hospitality/Carwash and Cafe.png` |
+| `images/exterior/vertis-garden-perspective.png` | **Vertis Garden** | `Exterior Renders- residential_commercial_hospitality/Vertis Garden.png` |
+| `images/branding/rp-logo-black.png` | **RP logo** | Wix fallback asset provided by user |
+
 **Images unknown in source: 6 out of 16 gallery images have no confirmed project.** PHASH-matched all 16 against 16,518 images in cloud storage + backup drive — no project-original source files found anywhere. The repo's own `images/` directory is the only surviving copy (see PHASH sweep below).
 
 Maps each gallery image across v1/v2/v3 to the most likely source project, based on:
