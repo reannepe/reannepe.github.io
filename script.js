@@ -266,7 +266,14 @@ function renderGallery() {
         <strong class="gallery-title">${item.title}</strong>
       </div>
     `;
-    card.addEventListener("click", () => openLightboxForGroup(item));
+    card.addEventListener("click", () => {
+      const details = projectDetails[item.group];
+      if (details) {
+        openProjectDialog(item.group);
+      } else {
+        openLightboxForGroup(item);
+      }
+    });
     gallery.appendChild(card);
   });
 }
@@ -377,31 +384,33 @@ typeSelect.addEventListener("change", () => {
   setFilter("type", typeSelect.value);
 });
 
-document.querySelectorAll("[data-project]").forEach((button) => {
-  button.addEventListener("click", () => {
-    const details = projectDetails[button.dataset.project];
-    if (!details) return;
-    projectDialogLabel.textContent = details.label;
-    projectDialogTitle.textContent = details.title;
-    projectDialogText.textContent = details.text;
-    projectDialogGallery.innerHTML = details.images.map((src, index) => (
-      `<img src="${src}" alt="${details.title} image ${index + 1}" data-dialog-img="${index}" />`
-    )).join("");
-    projectDialogGallery.querySelectorAll("img").forEach((img) => {
-      img.addEventListener("click", () => {
-        const images = details.images;
-        const idx = parseInt(img.dataset.dialogImg, 10);
-        state.lightboxItems = images.map((src) => ({ src, title: details.title, badges: [] }));
-        state.currentIndex = idx;
-        updateLightbox();
-        projectDialog.close();
-        lightbox.classList.add("open");
-        lightbox.setAttribute("aria-hidden", "false");
-        document.body.style.overflow = "hidden";
-      });
+function openProjectDialog(group) {
+  const details = projectDetails[group];
+  if (!details) return;
+  projectDialogLabel.textContent = details.label;
+  projectDialogTitle.textContent = details.title;
+  projectDialogText.textContent = details.text;
+  projectDialogGallery.innerHTML = details.images.map((src, index) => (
+    `<img src="${src}" alt="${details.title} image ${index + 1}" data-dialog-img="${index}" />`
+  )).join("");
+  projectDialogGallery.querySelectorAll("img").forEach((img) => {
+    img.addEventListener("click", () => {
+      const images = details.images;
+      const idx = parseInt(img.dataset.dialogImg, 10);
+      state.lightboxItems = images.map((src) => ({ src, title: details.title, badges: [] }));
+      state.currentIndex = idx;
+      updateLightbox();
+      projectDialog.close();
+      lightbox.classList.add("open");
+      lightbox.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
     });
-    projectDialog.showModal();
   });
+  projectDialog.showModal();
+}
+
+document.querySelectorAll("[data-project]").forEach((button) => {
+  button.addEventListener("click", () => openProjectDialog(button.dataset.project));
 });
 
 lightboxClose.addEventListener("click", closeLightbox);

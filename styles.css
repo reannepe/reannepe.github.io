@@ -442,7 +442,7 @@ section {
   font-size: 0.76rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--accent);
+  color: var(--accent-light);
   margin-bottom: 10px;
 }
 
