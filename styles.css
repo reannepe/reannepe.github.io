@@ -348,6 +348,10 @@ section {
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4), 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
+#projectDialogTitle {
+  color: #ff3a3a;
+}
+
 .support-card p,
 .case-study-copy p,
 .about-text p,
@@ -439,6 +443,7 @@ section {
   height: 100%;
   object-fit: cover;
   border-radius: 14px;
+  cursor: pointer;
 }
 
 .case-study-media {
